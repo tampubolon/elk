@@ -81,18 +81,18 @@ resource "aws_security_group" "ec2_security_group" {
 
 # EC2 Instances
 resource "aws_instance" "ec2_instances" {
-  count = length(local.ec2_instances)
+  for_each = { for idx, ec2_instance in local.ec2_instances : idx => ec2_instance }
 
   ami           = var.ami
-  instance_type = local.ec2_instances[count.index].instance_type
-  subnet_id     = local.ec2_instances[count.index].subnet_id
+  instance_type = each.value.instance_type
+  subnet_id     = each.value.subnet_id
   key_name      = "elasticsearch"  # Assigning SSH key
   associate_public_ip_address = true  # Enable Public IPv4 DNS
 
   iam_instance_profile = aws_iam_instance_profile.ec2_instance_profile.name
 
   tags = {
-    Name = local.ec2_instances[count.index].name
+    Name = each.value.name
   }
 
   vpc_security_group_ids = [aws_security_group.ec2_security_group.id]
