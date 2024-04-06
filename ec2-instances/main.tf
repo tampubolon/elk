@@ -1,47 +1,49 @@
-# Variables
 variable "ec2_yaml_file" {
-  default = "ec2.yaml"
+  description = "Path to the YAML file describing EC2 instances"
+  type        = string
+  default     = "ec2.yaml"
 }
 
 variable "instance_type" {
-  default = "t2.micro"
+  description = "Instance type for EC2 instances"
+  type        = string
+  default     = "t2.micro"
 }
 
 variable "ami" {
-  default = "ami-08e4b984abde34a4f"  # Ubuntu 20.04 LTS
+  description = "AMI ID for EC2 instances"
+  type        = string
+  default     = "ami-08e4b984abde34a4f" # Ubuntu 20.04 LTS
 }
 
-# Load YAML file
 locals {
+  vpc_id = "vpc-078d43214673a89d4"
+
   ec2_instances = yamldecode(file(var.ec2_yaml_file))
 }
 
-# IAM role
-resource "aws_iam_role" "ec2_role" {
-  name               = "ec2_instance_role"
-  assume_role_policy = jsonencode({
-    Version   = "2012-10-17",
-    Statement = [{
-      Effect    = "Allow",
-      Principal = {
-        Service = "ec2.amazonaws.com"
-      },
-      Action    = "sts:AssumeRole"
-    }]
-  })
+data "aws_subnet_ids" "public" {
+  vpc_id = local.vpc_id
+
+  filter {
+    name   = "tag:type"
+    values = ["public"]
+  }
 }
 
-# IAM instance profile
-resource "aws_iam_instance_profile" "ec2_instance_profile" {
-  name = "ec2_instance_profile"
-  role = aws_iam_role.ec2_role.name
+data "aws_subnet_ids" "private" {
+  vpc_id = local.vpc_id
+
+  filter {
+    name   = "tag:type"
+    values = ["private"]
+  }
 }
 
-# Security group
 resource "aws_security_group" "ec2_security_group" {
   name        = "ec2_security_group"
   description = "Security group for EC2 instances"
-  vpc_id      = "vpc-078d43214673a89d4"  # Replace with your VPC ID
+  vpc_id      = local.vpc_id
 
   ingress {
     from_port   = 22
@@ -79,15 +81,34 @@ resource "aws_security_group" "ec2_security_group" {
   }
 }
 
-# EC2 Instances
-resource "aws_instance" "ec2_instances" {
-  for_each = { for idx, ec2_instance in local.ec2_instances : idx => ec2_instance }
+resource "aws_iam_role" "ec2_role" {
+  name = "ec2_instance_role"
 
-  ami           = var.ami
-  instance_type = each.value.instance_type
-  subnet_id     = each.value.subnet_id
-  key_name      = "elasticsearch"  # Assigning SSH key
-  associate_public_ip_address = true  # Enable Public IPv4 DNS
+  assume_role_policy = jsonencode({
+    Version   = "2012-10-17",
+    Statement = [{
+      Effect    = "Allow",
+      Principal = {
+        Service = "ec2.amazonaws.com"
+      },
+      Action    = "sts:AssumeRole"
+    }]
+  })
+}
+
+resource "aws_iam_instance_profile" "ec2_instance_profile" {
+  name = "ec2_instance_profile"
+  role = aws_iam_role.ec2_role.name
+}
+
+resource "aws_instance" "public_ec2_instances" {
+  for_each = { for idx, ec2_instance in local.ec2_instances.public : idx => ec2_instance }
+
+  ami                         = var.ami
+  instance_type               = each.value.instance_type
+  subnet_id                   = tolist(data.aws_subnet_ids.public.ids)[0] # Fix subnet_id assignment
+  key_name                    = "elasticsearch"
+  associate_public_ip_address = true
 
   iam_instance_profile = aws_iam_instance_profile.ec2_instance_profile.name
 
@@ -97,7 +118,30 @@ resource "aws_instance" "ec2_instances" {
 
   vpc_security_group_ids = [aws_security_group.ec2_security_group.id]
 
-  # User data for Ubuntu instances
+  user_data = <<-EOF
+              #!/bin/bash
+              apt update -y
+              apt upgrade -y
+              EOF
+}
+
+resource "aws_instance" "private_ec2_instances" {
+  for_each = { for idx, ec2_instance in local.ec2_instances.private : idx => ec2_instance }
+
+  ami                         = var.ami
+  instance_type               = each.value.instance_type
+  subnet_id                   = tolist(data.aws_subnet_ids.private.ids)[0] # Fix subnet_id assignment
+  key_name                    = "elasticsearch"
+  associate_public_ip_address = false
+
+  iam_instance_profile = aws_iam_instance_profile.ec2_instance_profile.name
+
+  tags = {
+    Name = each.value.name
+  }
+
+  vpc_security_group_ids = [aws_security_group.ec2_security_group.id]
+
   user_data = <<-EOF
               #!/bin/bash
               apt update -y
