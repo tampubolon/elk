@@ -1,15 +1,19 @@
 # Variables
+variable "ec2_yaml_file" {
+  default = "ec2.yaml"
+}
+
 variable "instance_type" {
   default = "t2.micro"
 }
 
 variable "ami" {
-  default = "ami-06c4be2792f419b7b"  # Ubuntu 20.04 LTS
+  default = "ami-08e4b984abde34a4f"  # Ubuntu 20.04 LTS
 }
 
-variable "subnet_ids" {
-  type        = list(string)
-  default     = ["subnet-0aeee14cbbe042068", "subnet-07ce11cc724dff767", "subnet-08a9195eaa0a5b4bb"]
+# Load YAML file
+locals {
+  ec2_instances = yamldecode(file(var.ec2_yaml_file))
 }
 
 # IAM role
@@ -77,18 +81,21 @@ resource "aws_security_group" "ec2_security_group" {
 
 # EC2 Instances
 resource "aws_instance" "ec2_instances" {
-  count         = 3
+  count = length(local.ec2_instances)
+
   ami           = var.ami
-  instance_type = var.instance_type
-  subnet_id     = element(var.subnet_ids, count.index)
+  instance_type = local.ec2_instances[count.index].instance_type
+  subnet_id     = local.ec2_instances[count.index].subnet_id
+  key_name      = "elasticsearch"  # Assigning SSH key
+  associate_public_ip_address = true  # Enable Public IPv4 DNS
 
   iam_instance_profile = aws_iam_instance_profile.ec2_instance_profile.name
 
   tags = {
-    Name = "EC2 Instance ${count.index + 1}"
+    Name = local.ec2_instances[count.index].name
   }
 
-  security_groups = [aws_security_group.ec2_security_group.name]
+  vpc_security_group_ids = [aws_security_group.ec2_security_group.id]
 
   # User data for Ubuntu instances
   user_data = <<-EOF
