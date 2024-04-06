@@ -85,13 +85,13 @@ resource "aws_iam_role" "ec2_role" {
   name = "ec2_instance_role"
 
   assume_role_policy = jsonencode({
-    Version   = "2012-10-17",
+    Version = "2012-10-17",
     Statement = [{
-      Effect    = "Allow",
+      Effect = "Allow",
       Principal = {
         Service = "ec2.amazonaws.com"
       },
-      Action    = "sts:AssumeRole"
+      Action = "sts:AssumeRole"
     }]
   })
 }
@@ -118,11 +118,9 @@ resource "aws_instance" "public_ec2_instances" {
 
   vpc_security_group_ids = [aws_security_group.ec2_security_group.id]
 
-  user_data = <<-EOF
-              #!/bin/bash
-              apt update -y
-              apt upgrade -y
-              EOF
+  user_data = templatefile("${path.module}/user_data.tpl", {
+    elasticsearch = each.value.elasticsearch
+  })
 }
 
 resource "aws_instance" "private_ec2_instances" {
@@ -142,9 +140,7 @@ resource "aws_instance" "private_ec2_instances" {
 
   vpc_security_group_ids = [aws_security_group.ec2_security_group.id]
 
-  user_data = <<-EOF
-              #!/bin/bash
-              apt update -y
-              apt upgrade -y
-              EOF
+  user_data = templatefile("${path.module}/user_data.tpl", {
+    elasticsearch = each.value.elasticsearch
+  })
 }
