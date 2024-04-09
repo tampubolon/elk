@@ -4,12 +4,6 @@ variable "ec2_yaml_file" {
   default     = "ec2.yaml"
 }
 
-variable "instance_type" {
-  description = "Instance type for EC2 instances"
-  type        = string
-  default     = "t2.micro"
-}
-
 variable "ami" {
   description = "AMI ID for EC2 instances"
   type        = string
@@ -17,16 +11,16 @@ variable "ami" {
 }
 
 locals {
-  vpc_id = "vpc-078d43214673a89d4"
+  vpc_id        = "vpc-078d43214673a89d4"
   ec2_instances = yamldecode(file(var.ec2_yaml_file))
 
   public_subnet_count  = length(tolist(data.aws_subnet_ids.public.ids))
   private_subnet_count = length(tolist(data.aws_subnet_ids.private.ids))
 
-  public_subnet_indices = range(local.public_subnet_count)
+  public_subnet_indices  = range(local.public_subnet_count)
   private_subnet_indices = range(local.private_subnet_count)
 
-  public_instance_count = length(local.ec2_instances.public)
+  public_instance_count  = length(local.ec2_instances.public)
   private_instance_count = length(local.ec2_instances.private)
 }
 
@@ -45,47 +39,6 @@ data "aws_subnet_ids" "private" {
   filter {
     name   = "tag:type"
     values = ["private"]
-  }
-}
-
-resource "aws_security_group" "ec2_security_group" {
-  name        = "ec2_security_group"
-  description = "Security group for EC2 instances"
-  vpc_id      = local.vpc_id
-
-  ingress {
-    from_port   = 22
-    to_port     = 22
-    protocol    = "tcp"
-    cidr_blocks = ["0.0.0.0/0"]
-  }
-
-  ingress {
-    from_port   = 80
-    to_port     = 80
-    protocol    = "tcp"
-    cidr_blocks = ["0.0.0.0/0"]
-  }
-
-  ingress {
-    from_port   = 443
-    to_port     = 443
-    protocol    = "tcp"
-    cidr_blocks = ["0.0.0.0/0"]
-  }
-
-  ingress {
-    from_port   = 9200
-    to_port     = 9200
-    protocol    = "tcp"
-    cidr_blocks = ["0.0.0.0/0"]
-  }
-
-  egress {
-    from_port   = 0
-    to_port     = 0
-    protocol    = "-1"
-    cidr_blocks = ["0.0.0.0/0"]
   }
 }
 
@@ -125,7 +78,7 @@ resource "aws_instance" "public_ec2_instances" {
     Name = local.ec2_instances.public[count.index].name
   }
 
-  vpc_security_group_ids = [aws_security_group.ec2_security_group.id]
+  vpc_security_group_ids = [aws_security_group.public_ec2_security_group.id]
 
   user_data = templatefile("${path.module}/user_data.tpl", {
     elasticsearch = local.ec2_instances.public[count.index].elasticsearch
@@ -147,7 +100,7 @@ resource "aws_instance" "private_ec2_instances" {
     Name = local.ec2_instances.private[count.index].name
   }
 
-  vpc_security_group_ids = [aws_security_group.ec2_security_group.id]
+  vpc_security_group_ids = [aws_security_group.private_ec2_security_group.id]
 
   user_data = templatefile("${path.module}/user_data.tpl", {
     elasticsearch = local.ec2_instances.private[count.index].elasticsearch

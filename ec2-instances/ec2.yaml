@@ -1,67 +1,21 @@
-#Subnet List
-# Private-Subnet-0 subnet-0dfe6ca06a9ad2273
-# Private-Subnet-1 subnet-065ac5ab482ec5d6c
-# Private-Subnet-2 subnet-05a5824c840f3d7d2
-# Public-Subnet-0 subnet-0aeee14cbbe042068
-# Public-Subnet-1 subnet-07ce11cc724dff767
-# Public-Subnet-2 subnet-08a9195eaa0a5b4bb
-
-#- name: "ansible-host"
-#  subnet_id: "subnet-0aeee14cbbe042068" #Public
-#  instance_type: "t2.medium"
-#- name: "elasticsearch-1"
-#  subnet_id: "subnet-0aeee14cbbe042068" #public
-#  instance_type: "t2.small"
-#- name: "elasticsearch-2"
-#  subnet_id: "subnet-0dfe6ca06a9ad2273" #private
-#  instance_type: "t2.small"
-
-#- name: "elasticsearch-3"
-#  subnet_id: "subnet-065ac5ab482ec5d6c" #private
-#  instance_type: "t2.micro"
-#- name: "elasticsearch-3"
-#  subnet_id: "subnet-05a5824c840f3d7d2" #private
-#  instance_type: "t2.micro"
-
 public:
   - name: "ansible-host"
-    instance_type: "t2.micro"
+    instance_type: "t2.small"
     elasticsearch: "false"
   - name: "es-1"
-    instance_type: "t2.micro"
+    instance_type: "t2.medium"
     elasticsearch: "true"
-  - name: "es-2"
-    instance_type: "t2.micro"
-    elasticsearch: "true"    
-  - name: "es-3"
-    instance_type: "t2.micro"
-    elasticsearch: "true" 
   - name: "es-4"
-    instance_type: "t2.micro"
+    instance_type: "t2.small"
     elasticsearch: "true"
   - name: "es-5"
-    instance_type: "t2.micro"
-    elasticsearch: "true"
-  - name: "es-6"
-    instance_type: "t2.micro"
-    elasticsearch: "true"
-  - name: "es-7"
-    instance_type: "t2.micro"
-    elasticsearch: "true"    
-  - name: "es-8"
-    instance_type: "t2.micro"
-    elasticsearch: "true"  
-  - name: "es-9"
-    instance_type: "t2.micro"
-    elasticsearch: "true"                             
-
+    instance_type: "t2.small"
+    elasticsearch: "true"         
+         
 private:
-  - name: "es-10"
-    instance_type: "t2.micro"
+  - name: "es-2"
+    instance_type: "t2.medium"
     elasticsearch: "true"
-  - name: "es-11"
-    instance_type: "t2.micro"
-    elasticsearch: "true"    
-  - name: "es-12"
-    instance_type: "t2.micro"
-    elasticsearch: "false"     
+  - name: "es-3"
+    instance_type: "t2.medium"
+    elasticsearch: "true"

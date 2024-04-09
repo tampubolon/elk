@@ -4,6 +4,7 @@ apt upgrade -y
 
 %{ if elasticsearch == "true" }
 # Additional script
+sudo apt install openjdk-8-jdk
 chmod +x install.sh
 echo "Martinus Tampubolon"
 ./install.sh
