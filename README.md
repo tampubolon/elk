@@ -1,1 +1,1 @@
-# elasticsearch-lab
+# ELK Stack Exploration
