@@ -1,0 +1,48 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Error Count (4xx vs 5xx)",
+  "autosize": "fit",
+  "data": {
+    "url": {
+      "%context%": false,
+      "index": "ecommerce-index",
+      "body": {
+        "size": 0,
+        "aggs": {
+          "errors": {
+            "filters": {
+              "filters": {
+                "4xx": { "range": { "status": { "gte": 400, "lt": 500 } } },
+                "5xx": { "range": { "status": { "gte": 500, "lt": 600 } } }
+              }
+            }
+          }
+        }
+      }
+    },
+    "format": { "property": "aggregations.errors.buckets" }
+  },
+  "transform": [
+    { "fold": ["4xx", "5xx"], "as": ["error_type", "data"] },
+    { "calculate": "datum.data.doc_count", "as": "count" }
+  ],
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "error_type",
+      "type": "ordinal",
+      "title": "Error Type",
+      "axis": { "labelAngle": 0 }
+    },
+    "y": {
+      "field": "count",
+      "type": "quantitative",
+      "title": "Count",
+      "axis": { "format": "d" }
+    },
+    "tooltip": [
+      { "field": "error_type", "type": "ordinal" },
+      { "field": "count", "type": "quantitative" }
+    ]
+  }
+}

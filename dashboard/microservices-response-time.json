@@ -1,0 +1,123 @@
+{
+  "$schema": "https://vega.github.io/schema/vega/v5.json",
+  "description": "Average response time per microservice from ecommerce-index, including overall average",
+  "data": [
+    {
+      "name": "avg_response_time",
+      "url": {
+        "%type%": "elasticsearch",
+        "index": "ecommerce-index",
+        "body": {
+          "size": 0,
+          "aggs": {
+            "services": {
+              "terms": { "field": "microservice.keyword", "size": 10 },
+              "aggs": {
+                "avg_response_time": { "avg": { "field": "response_time" } }
+              }
+            },
+            "overall": {
+              "avg": { "field": "response_time" }
+            }
+          }
+        }
+      },
+      "format": {
+        "property": "aggregations.services.buckets"
+      }
+    },
+    {
+      "name": "overall_avg",
+      "values": [{}],
+      "transform": [
+        {
+          "type": "formula",
+          "expr": "datum.avg_response_time_overall",
+          "as": "value"
+        }
+      ]
+    }
+  ],
+  "scales": [
+    {
+      "name": "xscale",
+      "type": "band",
+      "domain": {
+        "data": "avg_response_time",
+        "field": "key"
+      },
+      "range": "width",
+      "padding": 0.2
+    },
+    {
+      "name": "yscale",
+      "type": "linear",
+      "domain": [0, 500],
+      "range": "height",
+      "nice": true,
+      "zero": true
+    }
+  ],
+  "axes": [
+    { "orient": "bottom", "scale": "xscale", "title": "Microservices" },
+    { "orient": "left", "scale": "yscale", "title": "Average Response Time (ms)" }
+  ],
+  "marks": [
+    {
+      "type": "rect",
+      "from": { "data": "avg_response_time" },
+      "encode": {
+        "enter": {
+          "x": { "scale": "xscale", "field": "key" },
+          "width": { "scale": "xscale", "band": 1 },
+          "y": { "scale": "yscale", "field": "avg_response_time.value" },
+          "y2": { "scale": "yscale", "value": 0 },
+          "fill": { "value": "#1f77b4" }
+        },
+        "hover": { "fill": { "value": "#ff7f0e" } }
+      }
+    },
+    {
+      "type": "text",
+      "from": { "data": "avg_response_time" },
+      "encode": {
+        "enter": {
+          "x": { "scale": "xscale", "field": "key", "band": 0.5 },
+          "y": { "scale": "yscale", "field": "avg_response_time.value", "offset": -5 },
+          "text": { "signal": "format(datum.avg_response_time.value, '.2f')" },
+          "align": { "value": "center" },
+          "baseline": { "value": "bottom" },
+          "fill": { "value": "#000" }
+        }
+      }
+    },
+    {
+      "type": "rect",
+      "from": {
+        "data": "avg_response_time",
+        "transform": [
+          {
+            "type": "aggregate",
+            "fields": ["avg_response_time.value"],
+            "ops": ["avg"],
+            "as": ["overall_avg"]
+          },
+          {
+            "type": "formula",
+            "expr": "'all'",
+            "as": "key"
+          }
+        ]
+      },
+      "encode": {
+        "enter": {
+          "x": { "scale": "xscale", "field": "key" },
+          "width": { "scale": "xscale", "band": 1 },
+          "y": { "scale": "yscale", "field": "overall_avg" },
+          "y2": { "scale": "yscale", "value": 0 },
+          "fill": { "value": "#2ca02c" }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,136 @@
+{
+  "$schema": "https://vega.github.io/schema/vega/v5.json",
+  "title": "Error Rate per 30-Minute Interval",
+  "width": 800,
+  "height": 300,
+
+  "data": [
+    {
+      "name": "raw_data",
+      "url": {
+        "%type%": "elasticsearch",
+        "index": "ecommerce-index",
+        "body": {
+          "size": 10000,
+          "_source": ["timestamp", "status"],
+          "query": {
+            "match_all": {}
+          }
+        }
+      },
+      "format": { "property": "hits.hits" },
+      "transform": [
+        {
+          "type": "formula",
+          "as": "time",
+          "expr": "toDate(datum._source.timestamp)"
+        },
+        {
+          "type": "formula",
+          "as": "status",
+          "expr": "toNumber(datum._source.status)"
+        },
+        {
+          "type": "formula",
+          "as": "error_flag",
+          "expr": "datum.status >= 500 ? 1 : 0"
+        }
+      ]
+    },
+
+    {
+      "name": "binned_data",
+      "source": "raw_data",
+      "transform": [
+        {
+          "type": "extent",
+          "field": "time",
+          "signal": "time_extent"
+        },
+        {
+          "type": "bin",
+          "field": "time",
+          "as": ["bin_start", "bin_end"],
+          "extent": { "signal": "time_extent" },
+          "step": 1800000
+        },
+        {
+          "type": "aggregate",
+          "groupby": ["bin_start"],
+          "ops": ["count", "sum"],
+          "fields": ["status", "error_flag"],
+          "as": ["total_requests", "error_requests"]
+        },
+        {
+          "type": "formula",
+          "as": "error_rate",
+          "expr": "(datum.error_requests / datum.total_requests) * 100"
+        }
+      ]
+    }
+  ],
+
+  "scales": [
+    {
+      "name": "xscale",
+      "type": "time",
+      "domain": { "data": "binned_data", "field": "bin_start" },
+      "range": "width"
+    },
+    {
+      "name": "yscale",
+      "type": "linear",
+      "domain": [0, 100],
+      "range": "height",
+      "nice": true,
+      "zero": true
+    }
+  ],
+
+  "axes": [
+    { "orient": "bottom", "scale": "xscale", "title": "Time (30-min bins)" },
+    { "orient": "left", "scale": "yscale", "title": "Error Rate (%)" }
+  ],
+
+  "marks": [
+    {
+      "type": "line",
+      "from": { "data": "binned_data" },
+      "encode": {
+        "enter": {
+          "x": { "scale": "xscale", "field": "bin_start" },
+          "y": { "scale": "yscale", "field": "error_rate" },
+          "stroke": { "value": "#d62728" },
+          "strokeWidth": { "value": 2 }
+        }
+      }
+    },
+    {
+      "type": "symbol",
+      "from": { "data": "binned_data" },
+      "encode": {
+        "enter": {
+          "x": { "scale": "xscale", "field": "bin_start" },
+          "y": { "scale": "yscale", "field": "error_rate" },
+          "fill": { "value": "#d62728" },
+          "size": { "value": 50 }
+        }
+      }
+    },
+    {
+      "type": "text",
+      "from": { "data": "binned_data" },
+      "encode": {
+        "enter": {
+          "x": { "scale": "xscale", "field": "bin_start", "offset": 5 },
+          "y": { "scale": "yscale", "field": "error_rate", "offset": -5 },
+          "text": { "signal": "format(datum.error_rate, '.1f') + '%'" },
+          "align": { "value": "left" },
+          "baseline": { "value": "bottom" },
+          "fill": { "value": "#000" },
+          "fontSize": { "value": 10 }
+        }
+      }
+    }
+  ]
+}

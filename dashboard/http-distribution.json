@@ -1,0 +1,91 @@
+{
+  "$schema": "https://vega.github.io/schema/vega/v5.json",
+  "title": "HTTP Status Code Distribution",
+  "autosize": "none",
+  "width": 400,
+  "height": 400,
+
+  "data": [
+    {
+      "name": "raw_status",
+      "url": {
+        "%type%": "elasticsearch",
+        "index": "ecommerce-index",
+        "body": {
+          "size": 0,
+          "aggs": {
+            "status_terms": {
+              "terms": {
+                "field": "status",
+                "size": 100
+              }
+            }
+          }
+        }
+      },
+      "format": { "property": "aggregations.status_terms.buckets" }
+    },
+    {
+      "name": "grouped_status",
+      "source": "raw_status",
+      "transform": [
+        {
+          "type": "formula",
+          "as": "category",
+          "expr": "datum.key >= 200 && datum.key < 300 ? '200' : datum.key >= 400 && datum.key < 500 ? '4xx' : datum.key >= 500 && datum.key < 600 ? '5xx' : 'Other'"
+        },
+        {
+          "type": "aggregate",
+          "groupby": ["category"],
+          "ops": ["sum"],
+          "fields": ["doc_count"],
+          "as": ["count"]
+        },
+        {
+          "type": "joinaggregate",
+          "ops": ["sum"],
+          "fields": ["count"],
+          "as": ["total"]
+        },
+        {
+          "type": "pie",
+          "field": "count"
+        }
+      ]
+    }
+  ],
+
+  "scales": [
+    {
+      "name": "color",
+      "type": "ordinal",
+      "domain": ["200", "4xx", "5xx", "Other"],
+      "range": ["#2ca02c", "#ff7f0e", "#d62728", "#9467bd"]
+    }
+  ],
+
+  "marks": [
+    {
+      "type": "arc",
+      "from": { "data": "grouped_status" },
+      "encode": {
+        "enter": {
+          "fill": { "scale": "color", "field": "category" },
+          "x": { "signal": "width / 2" },
+          "y": { "signal": "height / 2" },
+          "startAngle": { "field": "startAngle" },
+          "endAngle": { "field": "endAngle" },
+          "innerRadius": { "value": 0 },
+          "outerRadius": { "signal": "min(width, height) / 2" },
+          "tooltip": {
+            "signal": "datum.category + ': ' + format(datum.count, ',') + ' (' + format(datum.count / datum.total * 100, '.1f') + '%)'"
+          }
+        }
+      }
+    }
+  ],
+
+  "legends": [
+    { "fill": "color", "title": "Status Code Category" }
+  ]
+}
