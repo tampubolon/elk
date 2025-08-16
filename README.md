@@ -142,6 +142,9 @@ The generated JSON file will include Elasticsearch bulk indexing commands:
 
 ## B. ELK Stack for Logging Infrastructure
 
+### Why ELK stack?
+I chose the ELK stack for logging infrastructure because it provides a reliable way to collect and analyze logs from multiple services in one place. I have hands-on experience using Elasticsearch, Logstash, and Kibana, so I’m comfortable setting up log pipelines, creating dashboards, and monitoring system performance. With ELK, it’s easier to troubleshoot issues, spot patterns, and respond quickly when problems arise, which helps keep systems running smoothly.
+
 #### Demo
 Below screen recording video is ELK demo, it shows the ingested logs, dashboard, infrastructure monitoring and ELK cluster info:
 ![alt text](assets/sawitpro-elk.gif)
@@ -212,6 +215,7 @@ There are four panels on the Dashboard:
 - Error count for http code 4xx and 5xx.
 - HTTP status code distribution.
 - Average response time per microservices. 
+
 
 #### Reference
 - https://www.elastic.co/blog/getting-started-with-the-elastic-stack-and-docker-compose
