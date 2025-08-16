@@ -68,9 +68,13 @@ Computes useful metrics from the log file and outputs them in JSON.
 Example output in metrics.json:
 ```
 {
-  "total_transactions": 1200,
-  "error_rate": 0.05,
-  "average_response_time": 210
+  "total_log_entries": 1000,
+  "error_count": 185,
+  "5xx_count": 71,
+  "4xx_count": 114,
+  "200_count": 815,
+  "error_rate": 0.185,
+  "average_response_time": 278.53
 }
 ```
 
@@ -197,7 +201,7 @@ Step to setup this ELK infrastructure:
     docker-compose up -d
     ```
 - Access Kibana from GCP VM Public IP.
-- Setup Elasticsearch `index` for log, upload parsed log, setup `data view`, and `dashboard`.
+- Setup Elasticsearch `index` for log, upload parsed log, setup `data view`, and `dashboard`. Use [Vega Script](https://vega.github.io/vega/) on `assets/` folder to setup the dashboard.
 
 
 ### Dashboard
