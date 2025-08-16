@@ -5,7 +5,8 @@ I create a Golang CLI tool and a Python script for parsing the log.
 
 ### A1. Golang CLI
 This CLI tool is designed to help Site Reliability Engineers (SREs) parse raw log files, transform them into structured JSON suitable for ingestion into Elasticsearch, and compute useful metrics such as error rates, average response times, and total transactions.
-Why chose Golang for the CLI tool?
+
+#### Why chose Golang for the CLI tool?
 Go is a powerful and simple language, widely used for building CLI tools in the DevOps ecosystem. Popular projects like Docker, Kubernetes, Prometheus, and Terraform rely heavily on Go for their CLI interfaces. While Go has a native flag package for handling command-line arguments, using the Cobra package makes it even easier to create structured, user-friendly CLI applications.
 
 ---
@@ -121,7 +122,7 @@ sampe.log format:
 
 Example:
 ```
-[timestamp] [microservice] [status] [response_time]ms [user_id] [transaction_id] [description]
+2025-08-16T12:34:56Z payment 200 150ms user123 txn789 Payment successful
 ```
 
 Output Format:
@@ -141,11 +142,15 @@ The generated JSON file will include Elasticsearch bulk indexing commands:
 Below screen recording video is ELK demo, it shows the ingested logs, dashboard, infrastructure monitoring and ELK cluster info:
 ![alt text](assets/sawitpro-elk.gif)
 
+--- 
+
 #### EKS Cluster Access Credential
 You can access the ELK cluster from:
 - Cluster: http://34.86.95.104:5601/
 - Username: `sawitpro`
 - Password: `SawitProTeam2025`
+
+---
 
 #### Step to Setup ELK Infrastructure
 This ELK infrastructure runs on top of GCP VM. 
