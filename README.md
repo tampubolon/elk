@@ -222,6 +222,9 @@ There are four panels on the Dashboard:
 - Average response time per microservices. 
 
 
+#### Notion Site
+You can also read this document on Notion site: https://incredible-brow-d6e.notion.site/SawitPRO-SRE-Assignement-Martinus-Tampubolon-251b841b922280acaf9be51e7c96719e
+
 #### Reference
 - https://www.elastic.co/blog/getting-started-with-the-elastic-stack-and-docker-compose
 - https://dev.to/wiliamvj/the-power-of-the-cli-with-golang-and-cobra-cli-148k
