@@ -18,7 +18,7 @@ Go is a powerful and simple language, widely used for building CLI tools in the 
 ---
 
 #### Prerequisites
-Go installed (version 1.20+ recommended)
+Go installed (version `1.20+` recommended)
 
 ---
 
@@ -38,7 +38,7 @@ go mod tidy
 ```
 go build -o sawitpro main.go
 ```
-This will generate a binary named sawitpro.
+This will generate a binary named `sawitpro`.
 
 ---
 
@@ -129,9 +129,7 @@ Example:
 2025-08-16T12:34:56Z payment 200 150ms user123 txn789 Payment successful
 ```
 
-Output Format:
-
-The generated JSON file will include Elasticsearch bulk indexing commands:
+The output JSON file will include Elasticsearch bulk indexing commands:
 ```
 { "index": { "_index": "ecommerce-index", "_id": "1" } }
 { "timestamp": "2025-08-16T12:34:56Z", "microservice": "payment", "status": 200, "response_time": 150, "user_id": "user123", "transaction_id": "txn789", "description": "Payment successful" }
@@ -223,3 +221,4 @@ There are four panels on the Dashboard:
 
 #### Reference
 - https://www.elastic.co/blog/getting-started-with-the-elastic-stack-and-docker-compose
+- https://dev.to/wiliamvj/the-power-of-the-cli-with-golang-and-cobra-cli-148k
