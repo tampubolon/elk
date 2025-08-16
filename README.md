@@ -84,6 +84,9 @@ Example output in `metrics.json`:
 ### A2. Python Script
 `log-parser-tools/parser.py`, this Python script parses a `.log` file and converts it into a `.json` file formatted for **Elasticsearch bulk ingestion**.
 
+#### We already have Golang CLI, Why also Python?
+I already have a Golang CLI for log processing, but I created this Python parser because it’s simpler and faster to write for this kind of task. I’m more comfortable with Python than Golang, and for parsing and transforming logs into JSON, Python is more than sufficient.For small, one-off tasks like this, Python is often more efficient while still producing clean, maintainable code.
+
 ---
 
 #### Features
