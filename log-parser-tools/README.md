@@ -6,13 +6,18 @@ This CLI tool is designed to help Site Reliability Engineers (SREs) parse raw lo
 Why chose Golang for the CLI tool?
 Go is a powerful and simple language, widely used for building CLI tools in the DevOps ecosystem. Popular projects like Docker, Kubernetes, Prometheus, and Terraform rely heavily on Go for their CLI interfaces. While Go has a native flag package for handling command-line arguments, using the Cobra package makes it even easier to create structured, user-friendly CLI applications.
 
+---
+
 ### Features
 - Parse logs: Converts raw log files into Elasticsearch Bulk API JSON format.
 - Compute metrics: Extracts key metrics (error rate, average response time, transaction count) from logs and outputs them in JSON.
 
+---
 
 ### Prerequisites
 Go installed (version 1.20+ recommended)
+
+---
 
 ### Setup
 
@@ -24,12 +29,15 @@ go mod init sawitpro
 go mod tidy
 ```
 
+---
+
 ### Build
 ```
 go build -o sawitpro main.go
 ```
 This will generate a binary named sawitpro.
 
+---
 
 ### Usage
 #### Parse Log 
@@ -61,6 +69,7 @@ Example output in metrics.json:
 }
 ```
 
+---
 </br>
 
 ## 2. Python Script
@@ -93,8 +102,12 @@ input_file = "sample.log"
 output_file = "parsed_sample.json"
 ```
 
+---
+
 ### Run the script
 `python log_parser.py`
+
+---
 
 ### Log Format
 sampe.log format:
