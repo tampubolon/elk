@@ -61,14 +61,14 @@ Example output in metrics.json:
 }
 ```
 
-
+</br>
 
 ## 2. Python Script
 `parser.py`, this Python script parses a `.log` file and converts it into a `.json` file formatted for **Elasticsearch bulk ingestion**.
 
 ---
 
-## Features
+### Features
 - Reads a structured log file.
 - Parses each line using a regular expression.
 - Generates a JSON output compatible with Elasticsearch bulk API.
@@ -76,14 +76,14 @@ Example output in metrics.json:
 
 ---
 
-## Requirements
+### Requirements
 - Python 3.x
 
 No external packages are required; the script uses Python's built-in `re` module.
 
 ---
 
-## Usage
+### Usage
 
 1. Place your log file in the same directory as the script (default: `sample.log`).
 2. Modify the `input_file` and `output_file` variables if needed:
