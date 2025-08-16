@@ -170,6 +170,10 @@ Step to setup this ELK infrastructure:
 - Setup correct firewall for the VM to make Kibana accessible from internet.
 - Access the VM using SSH.
 - Clone this repo into the VM using git CLI.
+- Run below command on the VM to fix frequent ELK virtual memory issue:
+```
+sysctl -w vm.max_map_count=262144
+```
 - Add `.env` into the root folder of this project, the file should look like below:
     ```
     # Password for the 'kibana_system' user (at least 6 characters)
@@ -199,10 +203,10 @@ Step to setup this ELK infrastructure:
     # SAMPLE Predefined Key only to be used in POC environments
     ENCRYPTION_KEY=c34d38b3a14956121ff2170e5030b471551370178f43e5626eec58b04a30fae2
     ```
-    - run `docker-compose` on root folder of this project (where docker compose file located):
-    ```
-    docker-compose up -d
-    ```
+- run `docker-compose` on root folder of this project (where docker compose file located):
+  ```
+  docker-compose up -d
+  ```
 - Access Kibana from GCP VM Public IP.
 - Setup Elasticsearch `index` for log, upload parsed log, setup `data view`, and `dashboard`. Use [Vega Script](https://vega.github.io/vega/) on `assets/` folder to setup the dashboard.
 
