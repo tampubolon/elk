@@ -18,9 +18,9 @@ Go installed (version 1.20+ recommended)
 
 Clone this repository and install dependencies:
 ```
-git clone <your-repo-url>
-cd <your-repo-folder>
-go mod init logcli
+git clone git@github.com:tampubolon/elk.git
+cd log-parser-tool
+go mod init sawitpro
 go mod tidy
 ```
 
@@ -64,4 +64,53 @@ Example output in metrics.json:
 
 
 ## 2. Python Script
-`parser.py`
+`parser.py`, this Python script parses a `.log` file and converts it into a `.json` file formatted for **Elasticsearch bulk ingestion**.
+
+---
+
+## Features
+- Reads a structured log file.
+- Parses each line using a regular expression.
+- Generates a JSON output compatible with Elasticsearch bulk API.
+- Automatically assigns unique `_id` values for each log entry.
+
+---
+
+## Requirements
+- Python 3.x
+
+No external packages are required; the script uses Python's built-in `re` module.
+
+---
+
+## Usage
+
+1. Place your log file in the same directory as the script (default: `sample.log`).
+2. Modify the `input_file` and `output_file` variables if needed:
+
+```python
+input_file = "sample.log"
+output_file = "parsed_sample.json"
+```
+
+### Run the script
+`python log_parser.py`
+
+### Log Format
+sampe.log format:
+```
+[timestamp] [microservice] [status] [response_time]ms [user_id] [transaction_id] [description]
+```
+
+Example:
+```
+[timestamp] [microservice] [status] [response_time]ms [user_id] [transaction_id] [description]
+```
+
+Output Format:
+
+The generated JSON file will include Elasticsearch bulk indexing commands:
+```
+{ "index": { "_index": "ecommerce-index", "_id": "1" } }
+{ "timestamp": "2025-08-16T12:34:56Z", "microservice": "payment", "status": 200, "response_time": 150, "user_id": "user123", "transaction_id": "txn789", "description": "Payment successful" }
+```
