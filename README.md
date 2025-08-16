@@ -100,7 +100,7 @@ I already have a Golang CLI for log processing, but I created this Python parser
 #### Requirements
 - Python 3.x
 
-No external packages are required; the script uses Python's built-in `re` module.
+No external packages are required. the script uses Python's built-in `re` module.
 
 ---
 
