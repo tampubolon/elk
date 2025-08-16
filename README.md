@@ -1,7 +1,7 @@
 # Log Parsing CLI Tool & ELK for Log Infrastructure
 
 ## A. Parser Tool
-I create a Golang CLI tool and a Python script for parsing the log. 
+I create a Golang CLI tool and a Python script for parsing the log. The parser tools located on `log-parser-tools/` folder. 
 
 ### A1. Golang CLI
 This CLI tool is designed to help Site Reliability Engineers (SREs) parse raw log files, transform them into structured JSON suitable for ingestion into Elasticsearch, and compute useful metrics such as error rates, average response times, and total transactions.
@@ -49,9 +49,9 @@ Converts raw logs into Elasticsearch Bulk API format.
 ./sawitpro parse-log --input sample.log --output-file parsed.json
 ```
 - `--input`: Path to the raw log file.
-- `--output-file`: Path to save the structured JSON (default: parsed.json).
+- `--output-file`: Path to save the structured JSON (default: `parsed.json`).
 
-Example output in parsed.json:
+Example output in `parsed.json`:
 ```
 { "index": { "_index": "ecommerce-index", "_id": "1" } }
 { "timestamp": "2025-08-15 13:45:00", "microservice": "checkout", "status": 200, "response_time": 120, "user_id": "user1234", "transaction_id": "tx5678", "description": "Purchased iPhone 13" }
@@ -65,7 +65,7 @@ Computes useful metrics from the log file and outputs them in JSON.
 - `--input`: Path to the raw log file.
 - `--output-file`: Path to save the metrics JSON (default: metrics.json).
 
-Example output in metrics.json:
+Example output in `metrics.json`:
 ```
 {
   "total_log_entries": 1000,
@@ -82,7 +82,7 @@ Example output in metrics.json:
 </br>
 
 ### A2. Python Script
-`parser.py`, this Python script parses a `.log` file and converts it into a `.json` file formatted for **Elasticsearch bulk ingestion**.
+`log-parser-tools/parser.py`, this Python script parses a `.log` file and converts it into a `.json` file formatted for **Elasticsearch bulk ingestion**.
 
 ---
 
