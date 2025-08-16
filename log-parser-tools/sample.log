@@ -1,0 +1,1000 @@
+2025-08-15 13:45:00 checkout 200 120ms user1234 tx5678 Purchased iPhone 13
+2025-08-15 14:10:22 payment 500 450ms user5678 tx9876 Payment failed due to server error
+2025-08-15 14:22:10 search 200 80ms user9999 tx1122 Searched for Samsung Galaxy S23
+2025-08-15 14:35:55 checkout 404 95ms user4321 tx3344 Product not found
+2025-08-15 14:40:11 search 200 75ms user1111 tx4455 Searched for MacBook Pro 16
+2025-08-15 14:42:20 checkout 200 150ms user2222 tx5566 Purchased AirPods Pro
+2025-08-15 14:45:33 payment 200 320ms user3333 tx6677 Payment processed successfully
+2025-08-15 14:50:12 search 404 60ms user4444 tx7788 Search result not found
+2025-08-15 14:53:47 checkout 500 400ms user5555 tx8899 Checkout service timeout
+2025-08-15 14:55:10 payment 200 290ms user6666 tx9900 Payment completed
+2025-08-15 15:00:05 search 200 85ms user7777 tx1010 Searched for Sony WH-1000XM5
+2025-08-15 15:02:45 checkout 403 110ms user8888 tx1112 Access denied to product
+2025-08-15 15:05:18 payment 500 470ms user9990 tx1213 Payment service unavailable
+2025-08-15 15:10:30 search 200 90ms user1212 tx1314 Searched for Google Pixel 7
+2025-08-15 15:12:42 checkout 200 140ms user1313 tx1415 Purchased Apple Watch Series 8
+2025-08-15 15:15:56 payment 200 310ms user1414 tx1516 Payment confirmed
+2025-08-15 15:20:10 search 404 70ms user1515 tx1617 Product not in catalog
+2025-08-15 15:25:44 checkout 200 160ms user1616 tx1718 Purchased Samsung Galaxy Buds2
+2025-08-15 15:30:22 payment 200 300ms user1717 tx1819 Payment completed
+2025-08-15 15:35:11 search 200 88ms user1818 tx1920 Searched for Dell XPS 13
+2025-08-15 15:40:50 checkout 500 420ms user1919 tx2021 Checkout failed due to DB error
+2025-08-15 15:45:33 payment 200 280ms user2020 tx2122 Payment processed
+2025-08-15 15:50:10 search 200 82ms user2121 tx2223 Searched for Lenovo ThinkPad X1
+2025-08-15 15:55:42 checkout 200 130ms user2222 tx2324 Purchased iPad Pro 12.9
+2025-08-15 16:00:15 payment 403 350ms user2323 tx2425 Payment declined
+2025-08-15 16:05:48 search 200 77ms user2424 tx2526 Searched for Bose QuietComfort 45
+2025-08-15 16:10:05 checkout 404 100ms user2525 tx2627 Product not found
+2025-08-15 16:15:29 payment 500 460ms user2626 tx2728 Payment gateway error
+2025-08-15 16:20:10 search 200 83ms user2727 tx2829 Searched for Nintendo Switch OLED
+2025-08-15 16:25:14 checkout 200 145ms user2828 tx2930 Purchased PlayStation 5
+2025-08-15 16:30:45 payment 200 305ms user2929 tx3031 Payment success
+2025-08-15 16:35:59 search 200 79ms user3030 tx3132 Searched for Kindle Paperwhite
+2025-08-15 16:40:20 checkout 500 410ms user3131 tx3233 Checkout failed - inventory issue
+2025-08-15 16:45:03 payment 200 295ms user3232 tx3334 Payment confirmed
+2025-08-15 16:50:30 search 200 85ms user3333 tx3435 Searched for Apple AirTag
+2025-08-15 16:55:12 checkout 200 135ms user3434 tx3536 Purchased Google Nest Hub
+2025-08-15 17:00:45 payment 403 360ms user3535 tx3637 Payment declined due to fraud check
+2025-08-15 17:05:20 search 200 78ms user3636 tx3738 Searched for Fitbit Charge 5
+2025-08-15 17:10:55 checkout 404 105ms user3737 tx3839 Product not available
+2025-08-15 17:15:30 payment 500 470ms user3838 tx3940 Payment gateway timeout
+2025-08-15 17:20:00 search 200 80ms user3939 tx4041 Searched for HP Spectre x360
+2025-08-15 17:20:31 payment 200 129ms user4881 tx8297 Payment processed
+2025-08-15 17:21:12 checkout 200 454ms user3704 tx2670 Product not found
+2025-08-15 17:21:45 payment 200 94ms user8052 tx8749 Payment completed
+2025-08-15 17:21:59 checkout 200 452ms user2360 tx8877 Product not found
+2025-08-15 17:22:13 payment 200 345ms user6418 tx7976 Payment processed
+2025-08-15 17:23:07 checkout 200 235ms user3280 tx5383 Checkout failed due to DB error
+2025-08-15 17:23:21 search 200 379ms user4250 tx5429 Searched for MacBook Pro 16
+2025-08-15 17:24:13 checkout 200 455ms user2855 tx6653 Product not found
+2025-08-15 17:25:12 search 200 220ms user1183 tx7218 Searched for MacBook Pro 16
+2025-08-15 17:25:52 search 200 323ms user7710 tx4524 Searched for Samsung Galaxy S23
+2025-08-15 17:26:06 checkout 200 116ms user6601 tx9684 Access denied to product
+2025-08-15 17:26:26 search 200 146ms user4170 tx4917 Searched for Nintendo Switch OLED
+2025-08-15 17:27:15 checkout 200 167ms user3036 tx3106 Access denied to product
+2025-08-15 17:27:46 payment 200 384ms user2558 tx8057 Payment service unavailable
+2025-08-15 17:28:30 checkout 200 196ms user4977 tx1591 Purchased iPhone 13
+2025-08-15 17:29:01 checkout 200 303ms user4917 tx2272 Purchased AirPods Pro
+2025-08-15 17:29:26 search 200 274ms user7267 tx3331 Searched for MacBook Pro 16
+2025-08-15 17:30:23 payment 200 224ms user6366 tx4714 Payment declined
+2025-08-15 17:30:33 checkout 200 182ms user1431 tx7787 Purchased iPhone 13
+2025-08-15 17:31:06 payment 200 127ms user6945 tx4815 Payment completed
+2025-08-15 17:31:30 search 200 413ms user8710 tx4604 Searched for MacBook Pro 16
+2025-08-15 17:31:59 search 200 151ms user2681 tx5870 Searched for Nintendo Switch OLED
+2025-08-15 17:32:27 payment 200 430ms user4454 tx8545 Payment declined
+2025-08-15 17:32:37 search 200 136ms user6881 tx4219 Searched for Samsung Galaxy S23
+2025-08-15 17:33:07 checkout 200 403ms user4137 tx9414 Purchased AirPods Pro
+2025-08-15 17:34:03 checkout 200 285ms user8104 tx8003 Purchased AirPods Pro
+2025-08-15 17:34:33 checkout 200 90ms user7463 tx6001 Checkout failed due to DB error
+2025-08-15 17:35:05 checkout 200 203ms user8594 tx4034 Checkout failed due to DB error
+2025-08-15 17:35:52 payment 200 204ms user5924 tx1495 Payment declined
+2025-08-15 17:36:30 payment 200 215ms user4631 tx8327 Payment completed
+2025-08-15 17:37:29 search 200 374ms user9905 tx8420 Searched for Samsung Galaxy S23
+2025-08-15 17:37:57 search 200 83ms user3800 tx2986 Searched for MacBook Pro 16
+2025-08-15 17:38:22 checkout 200 315ms user1038 tx2730 Purchased iPhone 13
+2025-08-15 17:39:05 checkout 200 278ms user1842 tx3158 Access denied to product
+2025-08-15 17:39:31 checkout 200 71ms user9561 tx5120 Checkout failed due to DB error
+2025-08-15 17:39:47 search 200 333ms user1471 tx5248 Search result not found
+2025-08-15 17:40:33 checkout 200 234ms user1277 tx7460 Access denied to product
+2025-08-15 17:40:33 search 200 372ms user3807 tx3378 Searched for Samsung Galaxy S23
+2025-08-15 17:40:33 payment 404 348ms user7200 tx1021 Payment declined
+2025-08-15 17:40:33 checkout 404 426ms user7103 tx4764 Checkout failed due to DB error
+2025-08-15 17:40:33 search 200 268ms user3553 tx2308 Searched for MacBook Pro 16
+2025-08-15 17:40:33 payment 200 484ms user8741 tx2002 Payment completed
+2025-08-15 17:40:33 checkout 200 385ms user9151 tx8500 Purchased AirPods Pro
+2025-08-15 17:40:33 search 200 213ms user8973 tx8314 Searched for MacBook Pro 16
+2025-08-15 17:40:33 search 200 110ms user9718 tx5554 Searched for MacBook Pro 16
+2025-08-15 17:40:33 payment 200 228ms user7698 tx2972 Payment completed
+2025-08-15 17:40:33 payment 200 233ms user6438 tx7225 Payment completed
+2025-08-15 17:41:28 checkout 200 69ms user7675 tx5406 Access denied to product
+2025-08-15 17:41:49 payment 200 319ms user4867 tx6196 Payment declined
+2025-08-15 17:42:14 search 200 402ms user3515 tx5828 Search result not found
+2025-08-15 17:42:34 checkout 200 306ms user1230 tx4524 Product not found
+2025-08-15 17:42:48 search 200 65ms user9916 tx2983 Search result not found
+2025-08-15 17:43:28 payment 200 367ms user9896 tx2860 Payment processed
+2025-08-15 17:43:39 checkout 200 265ms user5484 tx7896 Access denied to product
+2025-08-15 17:43:57 payment 200 240ms user6495 tx2119 Payment declined
+2025-08-15 17:44:30 payment 200 313ms user8072 tx5017 Payment gateway error
+2025-08-15 17:44:45 checkout 200 179ms user6787 tx1219 Purchased AirPods Pro
+2025-08-15 17:44:45 search 200 476ms user1569 tx3581 Search result not found
+2025-08-15 17:44:45 payment 200 329ms user8947 tx9743 Payment service unavailable
+2025-08-15 17:44:45 checkout 500 268ms user9469 tx2593 Purchased iPhone 13
+2025-08-15 17:44:45 payment 200 375ms user5127 tx8807 Payment declined
+2025-08-15 17:45:02 checkout 200 314ms user1857 tx3663 Access denied to product
+2025-08-15 17:45:41 search 403 456ms user8510 tx2734 Searched for Nintendo Switch OLED
+2025-08-15 17:45:56 payment 200 139ms user9830 tx2649 Payment declined
+2025-08-15 17:46:47 search 200 200ms user4982 tx4197 Search result not found
+2025-08-15 17:47:27 payment 200 439ms user2607 tx5504 Payment completed
+2025-08-15 17:48:18 payment 200 197ms user5430 tx5735 Payment completed
+2025-08-15 17:48:37 search 404 141ms user4865 tx7852 Searched for Samsung Galaxy S23
+2025-08-15 17:49:16 search 200 314ms user6639 tx7322 Searched for MacBook Pro 16
+2025-08-15 17:50:13 payment 200 399ms user6521 tx9399 Payment declined
+2025-08-15 17:50:52 checkout 200 315ms user7827 tx6940 Product not found
+2025-08-15 17:51:23 payment 200 301ms user5347 tx8717 Payment gateway error
+2025-08-15 17:51:33 search 200 123ms user6410 tx3346 Searched for Nintendo Switch OLED
+2025-08-15 17:52:03 search 500 103ms user9789 tx9380 Searched for Samsung Galaxy S23
+2025-08-15 17:53:02 checkout 200 138ms user4538 tx8560 Product not found
+2025-08-15 17:53:45 payment 200 496ms user6479 tx4851 Payment gateway error
+2025-08-15 17:54:43 payment 200 265ms user8203 tx6890 Payment declined
+2025-08-15 17:55:42 search 500 250ms user6398 tx8641 Search result not found
+2025-08-15 17:55:56 payment 200 305ms user1552 tx1596 Payment completed
+2025-08-15 17:56:44 checkout 200 355ms user7612 tx5328 Checkout failed due to DB error
+2025-08-15 17:56:58 payment 200 495ms user1772 tx4799 Payment completed
+2025-08-15 17:57:16 search 200 372ms user8231 tx9568 Searched for Nintendo Switch OLED
+2025-08-15 17:57:33 payment 200 245ms user2636 tx1077 Payment completed
+2025-08-15 17:57:52 payment 200 440ms user9667 tx3448 Payment declined
+2025-08-15 17:58:24 search 200 111ms user4093 tx1351 Search result not found
+2025-08-15 17:58:52 search 200 383ms user3443 tx9817 Searched for MacBook Pro 16
+2025-08-15 17:59:06 payment 200 116ms user3195 tx6678 Payment service unavailable
+2025-08-15 17:59:55 checkout 200 358ms user6710 tx5227 Purchased AirPods Pro
+2025-08-15 18:00:25 search 404 343ms user1930 tx8914 Searched for MacBook Pro 16
+2025-08-15 18:01:07 search 403 425ms user9666 tx5825 Searched for MacBook Pro 16
+2025-08-15 18:02:03 checkout 200 280ms user7095 tx1670 Access denied to product
+2025-08-15 18:02:15 search 200 115ms user7030 tx6358 Searched for Samsung Galaxy S23
+2025-08-15 18:03:07 payment 200 155ms user1618 tx8436 Payment declined
+2025-08-15 18:03:40 search 200 479ms user6732 tx8792 Searched for Samsung Galaxy S23
+2025-08-15 18:03:56 search 404 290ms user1738 tx9937 Searched for Samsung Galaxy S23
+2025-08-15 18:04:08 payment 200 220ms user4873 tx1848 Payment service unavailable
+2025-08-15 18:04:52 checkout 200 384ms user7884 tx3015 Checkout failed due to DB error
+2025-08-15 18:05:11 checkout 403 118ms user4506 tx2911 Access denied to product
+2025-08-15 18:05:47 search 200 346ms user5517 tx1024 Searched for MacBook Pro 16
+2025-08-15 18:05:47 search 200 151ms user2695 tx7792 Searched for Nintendo Switch OLED
+2025-08-15 18:05:47 checkout 404 437ms user2341 tx8408 Product not found
+2025-08-15 18:05:47 search 200 63ms user6928 tx7409 Searched for Nintendo Switch OLED
+2025-08-15 18:05:47 checkout 200 431ms user7494 tx2210 Product not found
+2025-08-15 18:05:47 search 500 405ms user7422 tx5421 Search result not found
+2025-08-15 18:05:47 search 200 349ms user9789 tx3531 Search result not found
+2025-08-15 18:05:47 payment 200 487ms user2732 tx3039 Payment declined
+2025-08-15 18:05:47 search 500 225ms user8687 tx1992 Searched for Samsung Galaxy S23
+2025-08-15 18:06:24 payment 200 246ms user1628 tx2523 Payment processed
+2025-08-15 18:06:54 checkout 200 157ms user5191 tx2207 Product not found
+2025-08-15 18:07:24 search 500 429ms user3331 tx8852 Searched for MacBook Pro 16
+2025-08-15 18:07:24 search 404 397ms user5240 tx9277 Searched for Samsung Galaxy S23
+2025-08-15 18:07:24 payment 500 339ms user2909 tx3759 Payment gateway error
+2025-08-15 18:07:24 checkout 200 95ms user6515 tx1428 Checkout failed due to DB error
+2025-08-15 18:07:24 search 200 394ms user9244 tx2426 Searched for Samsung Galaxy S23
+2025-08-15 18:07:24 payment 404 263ms user1183 tx4680 Payment service unavailable
+2025-08-15 18:07:24 search 200 230ms user1477 tx2388 Searched for MacBook Pro 16
+2025-08-15 18:07:24 payment 200 480ms user6513 tx4498 Payment service unavailable
+2025-08-15 18:07:24 payment 200 142ms user9701 tx1104 Payment declined
+2025-08-15 18:07:24 search 200 211ms user1276 tx8940 Search result not found
+2025-08-15 18:07:24 search 200 259ms user9022 tx4278 Searched for MacBook Pro 16
+2025-08-15 18:07:24 checkout 200 204ms user5326 tx7991 Purchased iPhone 13
+2025-08-15 18:07:24 checkout 200 218ms user2844 tx1587 Purchased AirPods Pro
+2025-08-15 18:07:24 search 200 61ms user2243 tx2851 Search result not found
+2025-08-15 18:07:24 search 200 234ms user3628 tx8995 Searched for MacBook Pro 16
+2025-08-15 18:07:51 search 200 140ms user7665 tx6196 Searched for Nintendo Switch OLED
+2025-08-15 18:08:50 checkout 200 207ms user7449 tx1332 Checkout failed due to DB error
+2025-08-15 18:09:16 payment 200 439ms user8051 tx7781 Payment completed
+2025-08-15 18:10:09 checkout 403 418ms user1775 tx3973 Purchased iPhone 13
+2025-08-15 18:10:46 search 200 457ms user8184 tx8544 Searched for Nintendo Switch OLED
+2025-08-15 18:11:25 payment 200 489ms user2456 tx3538 Payment processed
+2025-08-15 18:11:57 payment 200 177ms user5218 tx2625 Payment declined
+2025-08-15 18:12:50 payment 200 455ms user8512 tx1789 Payment declined
+2025-08-15 18:13:46 search 200 360ms user8300 tx5148 Searched for Nintendo Switch OLED
+2025-08-15 18:14:43 search 200 351ms user9566 tx1874 Searched for Samsung Galaxy S23
+2025-08-15 18:15:36 search 200 307ms user6066 tx9536 Searched for MacBook Pro 16
+2025-08-15 18:15:54 search 200 127ms user8353 tx6413 Search result not found
+2025-08-15 18:16:23 payment 200 355ms user1451 tx2721 Payment gateway error
+2025-08-15 18:16:42 search 200 417ms user7212 tx8507 Searched for MacBook Pro 16
+2025-08-15 18:17:32 payment 200 192ms user6493 tx4771 Payment processed
+2025-08-15 18:17:32 checkout 404 450ms user8804 tx8561 Purchased iPhone 13
+2025-08-15 18:17:32 payment 200 345ms user6185 tx4863 Payment processed
+2025-08-15 18:17:32 payment 200 170ms user9947 tx3942 Payment service unavailable
+2025-08-15 18:17:32 search 404 290ms user4338 tx9982 Searched for Samsung Galaxy S23
+2025-08-15 18:17:32 payment 404 89ms user6433 tx2255 Payment gateway error
+2025-08-15 18:17:32 payment 200 305ms user4279 tx7149 Payment processed
+2025-08-15 18:17:32 checkout 403 300ms user3569 tx1229 Purchased iPhone 13
+2025-08-15 18:17:32 search 403 331ms user8804 tx3221 Search result not found
+2025-08-15 18:17:32 payment 200 135ms user2733 tx1546 Payment service unavailable
+2025-08-15 18:17:32 payment 200 183ms user5299 tx6681 Payment completed
+2025-08-15 18:17:32 search 403 261ms user1879 tx6758 Searched for Nintendo Switch OLED
+2025-08-15 18:17:49 checkout 200 61ms user6929 tx1712 Checkout failed due to DB error
+2025-08-15 18:18:44 checkout 403 180ms user6360 tx1359 Access denied to product
+2025-08-15 18:18:44 search 403 295ms user4112 tx4191 Searched for Nintendo Switch OLED
+2025-08-15 18:18:44 search 404 208ms user6986 tx4816 Searched for Samsung Galaxy S23
+2025-08-15 18:18:44 payment 200 153ms user3158 tx3566 Payment completed
+2025-08-15 18:18:44 search 404 493ms user4226 tx8316 Searched for Nintendo Switch OLED
+2025-08-15 18:18:44 payment 200 399ms user7822 tx4316 Payment service unavailable
+2025-08-15 18:18:44 checkout 200 273ms user4496 tx4648 Access denied to product
+2025-08-15 18:18:44 checkout 200 434ms user7978 tx8023 Purchased AirPods Pro
+2025-08-15 18:18:44 checkout 200 430ms user5829 tx4148 Checkout failed due to DB error
+2025-08-15 18:19:19 search 200 225ms user3230 tx8989 Searched for Nintendo Switch OLED
+2025-08-15 18:20:19 checkout 404 236ms user6472 tx9584 Checkout failed due to DB error
+2025-08-15 18:21:04 checkout 200 389ms user9517 tx3956 Checkout failed due to DB error
+2025-08-15 18:22:04 search 200 352ms user4145 tx5373 Searched for MacBook Pro 16
+2025-08-15 18:22:52 checkout 200 333ms user5744 tx7024 Purchased AirPods Pro
+2025-08-15 18:23:08 search 404 450ms user5193 tx7346 Searched for Nintendo Switch OLED
+2025-08-15 18:23:55 payment 200 264ms user3105 tx5035 Payment declined
+2025-08-15 18:24:11 search 200 300ms user5929 tx5924 Searched for Nintendo Switch OLED
+2025-08-15 18:24:45 checkout 200 237ms user1130 tx1811 Product not found
+2025-08-15 18:25:30 checkout 403 281ms user3437 tx4814 Product not found
+2025-08-15 18:25:46 payment 200 149ms user2537 tx8931 Payment processed
+2025-08-15 18:26:39 checkout 500 105ms user7591 tx1527 Purchased iPhone 13
+2025-08-15 18:27:27 checkout 200 66ms user7082 tx7472 Checkout failed due to DB error
+2025-08-15 18:28:10 payment 200 311ms user6081 tx6715 Payment gateway error
+2025-08-15 18:28:10 checkout 403 410ms user7958 tx5452 Purchased AirPods Pro
+2025-08-15 18:28:10 checkout 200 410ms user1087 tx7705 Purchased AirPods Pro
+2025-08-15 18:28:10 payment 500 347ms user6334 tx2759 Payment service unavailable
+2025-08-15 18:28:10 checkout 200 315ms user6864 tx5844 Purchased iPhone 13
+2025-08-15 18:28:10 search 200 301ms user9519 tx1209 Searched for MacBook Pro 16
+2025-08-15 18:28:34 search 200 255ms user4941 tx8560 Searched for Samsung Galaxy S23
+2025-08-15 18:28:45 payment 200 191ms user8167 tx6750 Payment declined
+2025-08-15 18:29:03 checkout 200 136ms user4117 tx2488 Access denied to product
+2025-08-15 18:29:13 checkout 404 195ms user3157 tx8617 Checkout failed due to DB error
+2025-08-15 18:29:27 checkout 200 99ms user4662 tx6876 Access denied to product
+2025-08-15 18:30:13 payment 200 96ms user5328 tx8058 Payment gateway error
+2025-08-15 18:30:35 payment 200 108ms user1815 tx2153 Payment completed
+2025-08-15 18:31:13 payment 200 232ms user7575 tx7454 Payment declined
+2025-08-15 18:31:58 search 200 327ms user2588 tx4527 Searched for Samsung Galaxy S23
+2025-08-15 18:32:09 search 200 140ms user3978 tx4286 Searched for Samsung Galaxy S23
+2025-08-15 18:32:46 checkout 200 439ms user5084 tx2467 Product not found
+2025-08-15 18:33:28 payment 200 86ms user2096 tx9430 Payment gateway error
+2025-08-15 18:33:50 payment 200 206ms user9264 tx1974 Payment gateway error
+2025-08-15 18:34:26 search 403 344ms user6179 tx7078 Search result not found
+2025-08-15 18:35:05 search 200 194ms user4412 tx2476 Searched for Nintendo Switch OLED
+2025-08-15 18:35:25 search 200 98ms user9052 tx4450 Searched for Samsung Galaxy S23
+2025-08-15 18:35:48 search 200 220ms user7895 tx8172 Searched for Samsung Galaxy S23
+2025-08-15 18:36:21 search 200 139ms user9807 tx4338 Searched for MacBook Pro 16
+2025-08-15 18:37:12 checkout 200 374ms user7797 tx9117 Purchased AirPods Pro
+2025-08-15 18:38:04 payment 200 275ms user3007 tx1577 Payment declined
+2025-08-15 18:38:28 payment 200 263ms user2138 tx8743 Payment processed
+2025-08-15 18:39:25 checkout 200 486ms user8527 tx8422 Purchased iPhone 13
+2025-08-15 18:39:48 checkout 200 106ms user4841 tx1505 Product not found
+2025-08-15 18:40:11 checkout 403 445ms user6415 tx1155 Product not found
+2025-08-15 18:41:06 search 200 326ms user3639 tx8940 Searched for Nintendo Switch OLED
+2025-08-15 18:41:30 checkout 200 449ms user7472 tx7063 Purchased iPhone 13
+2025-08-15 18:42:11 checkout 200 380ms user2067 tx3668 Purchased iPhone 13
+2025-08-15 18:42:44 search 200 416ms user2638 tx5216 Search result not found
+2025-08-15 18:43:03 search 200 373ms user6857 tx3139 Search result not found
+2025-08-15 18:43:22 payment 200 207ms user6987 tx8773 Payment declined
+2025-08-15 18:43:46 checkout 200 209ms user1815 tx6952 Checkout failed due to DB error
+2025-08-15 18:44:18 payment 200 234ms user8874 tx8548 Payment gateway error
+2025-08-15 18:45:14 payment 200 346ms user3539 tx3105 Payment gateway error
+2025-08-15 18:45:53 checkout 200 189ms user8730 tx2727 Purchased iPhone 13
+2025-08-15 18:46:33 checkout 500 202ms user6458 tx6120 Product not found
+2025-08-15 18:46:43 checkout 200 319ms user9432 tx2101 Purchased AirPods Pro
+2025-08-15 18:47:10 search 200 295ms user8078 tx2023 Searched for Samsung Galaxy S23
+2025-08-15 18:47:24 search 200 213ms user4774 tx8435 Searched for Nintendo Switch OLED
+2025-08-15 18:47:47 checkout 200 366ms user5829 tx4416 Checkout failed due to DB error
+2025-08-15 18:48:22 checkout 200 304ms user5869 tx7038 Purchased iPhone 13
+2025-08-15 18:48:34 payment 200 390ms user1526 tx6739 Payment processed
+2025-08-15 18:49:11 payment 200 71ms user1368 tx5364 Payment declined
+2025-08-15 18:49:34 search 200 411ms user7867 tx1524 Searched for MacBook Pro 16
+2025-08-15 18:50:10 checkout 200 109ms user9423 tx8569 Checkout failed due to DB error
+2025-08-15 18:50:43 payment 200 168ms user4637 tx7835 Payment declined
+2025-08-15 18:51:18 search 200 102ms user2008 tx6365 Searched for Nintendo Switch OLED
+2025-08-15 18:52:09 checkout 403 445ms user4648 tx9427 Checkout failed due to DB error
+2025-08-15 18:52:09 checkout 500 192ms user8306 tx4810 Purchased AirPods Pro
+2025-08-15 18:52:09 checkout 200 353ms user5089 tx6926 Checkout failed due to DB error
+2025-08-15 18:52:09 search 200 374ms user3704 tx6009 Search result not found
+2025-08-15 18:52:09 payment 200 459ms user5789 tx9999 Payment declined
+2025-08-15 18:52:09 checkout 200 119ms user1664 tx7229 Purchased AirPods Pro
+2025-08-15 18:52:20 checkout 200 442ms user6965 tx5829 Checkout failed due to DB error
+2025-08-15 18:52:57 checkout 200 266ms user5399 tx4484 Purchased iPhone 13
+2025-08-15 18:53:13 payment 200 291ms user3775 tx8834 Payment declined
+2025-08-15 18:54:06 payment 200 377ms user4495 tx8926 Payment declined
+2025-08-15 18:54:45 payment 200 202ms user1965 tx6915 Payment gateway error
+2025-08-15 18:55:16 payment 404 273ms user4896 tx5917 Payment service unavailable
+2025-08-15 18:55:55 payment 200 149ms user9993 tx1144 Payment gateway error
+2025-08-15 18:56:47 search 200 439ms user4374 tx5777 Searched for Nintendo Switch OLED
+2025-08-15 18:57:46 checkout 200 114ms user9151 tx9688 Purchased AirPods Pro
+2025-08-15 18:58:14 search 200 484ms user5860 tx2324 Searched for Nintendo Switch OLED
+2025-08-15 18:58:14 checkout 200 203ms user1953 tx8727 Checkout failed due to DB error
+2025-08-15 18:58:14 payment 200 476ms user7301 tx6294 Payment service unavailable
+2025-08-15 18:58:14 checkout 200 170ms user9974 tx9783 Checkout failed due to DB error
+2025-08-15 18:58:14 search 200 472ms user2388 tx7496 Searched for MacBook Pro 16
+2025-08-15 18:58:14 search 200 317ms user3483 tx8500 Searched for MacBook Pro 16
+2025-08-15 18:58:59 search 200 492ms user6407 tx4896 Searched for Samsung Galaxy S23
+2025-08-15 18:59:16 search 404 194ms user4722 tx4878 Searched for Samsung Galaxy S23
+2025-08-15 18:59:44 checkout 200 439ms user1224 tx6536 Access denied to product
+2025-08-15 19:00:08 checkout 200 128ms user2684 tx6187 Product not found
+2025-08-15 19:00:22 checkout 200 474ms user5176 tx1459 Purchased AirPods Pro
+2025-08-15 19:01:03 payment 200 196ms user1140 tx7648 Payment processed
+2025-08-15 19:01:33 checkout 200 155ms user1482 tx5604 Purchased iPhone 13
+2025-08-15 19:01:53 payment 200 165ms user5188 tx8939 Payment processed
+2025-08-15 19:02:10 search 200 350ms user1983 tx2414 Searched for Samsung Galaxy S23
+2025-08-15 19:02:28 checkout 200 117ms user1969 tx1135 Checkout failed due to DB error
+2025-08-15 19:02:42 payment 200 369ms user9538 tx2226 Payment service unavailable
+2025-08-15 19:03:27 search 200 355ms user4094 tx2683 Searched for Samsung Galaxy S23
+2025-08-15 19:03:39 payment 200 479ms user9161 tx5235 Payment declined
+2025-08-15 19:04:02 payment 200 469ms user6073 tx8658 Payment declined
+2025-08-15 19:04:23 search 200 184ms user5970 tx6053 Search result not found
+2025-08-15 19:04:53 checkout 200 400ms user8216 tx8738 Purchased AirPods Pro
+2025-08-15 19:05:10 search 500 203ms user2959 tx4093 Searched for Nintendo Switch OLED
+2025-08-15 19:05:59 checkout 200 175ms user2953 tx2734 Access denied to product
+2025-08-15 19:05:59 search 404 478ms user6094 tx9308 Search result not found
+2025-08-15 19:05:59 search 500 483ms user8682 tx5072 Searched for Nintendo Switch OLED
+2025-08-15 19:05:59 payment 200 226ms user3578 tx4996 Payment service unavailable
+2025-08-15 19:05:59 search 200 260ms user6597 tx1339 Search result not found
+2025-08-15 19:05:59 payment 200 415ms user5362 tx9424 Payment declined
+2025-08-15 19:05:59 search 200 105ms user6284 tx8746 Searched for MacBook Pro 16
+2025-08-15 19:05:59 checkout 200 390ms user7246 tx8148 Purchased AirPods Pro
+2025-08-15 19:05:59 search 404 473ms user6330 tx5903 Search result not found
+2025-08-15 19:05:59 search 200 490ms user4981 tx2680 Searched for Samsung Galaxy S23
+2025-08-15 19:05:59 checkout 200 128ms user5159 tx6331 Checkout failed due to DB error
+2025-08-15 19:05:59 search 404 350ms user1120 tx1467 Searched for Nintendo Switch OLED
+2025-08-15 19:05:59 payment 200 100ms user9734 tx8059 Payment service unavailable
+2025-08-15 19:05:59 checkout 500 481ms user2784 tx9514 Purchased AirPods Pro
+2025-08-15 19:06:15 payment 200 413ms user1083 tx1449 Payment declined
+2025-08-15 19:07:15 checkout 200 109ms user7478 tx8828 Access denied to product
+2025-08-15 19:07:53 search 200 324ms user2128 tx9668 Searched for Samsung Galaxy S23
+2025-08-15 19:08:26 payment 200 244ms user2216 tx2807 Payment gateway error
+2025-08-15 19:09:23 checkout 200 213ms user9519 tx8204 Access denied to product
+2025-08-15 19:09:57 checkout 200 269ms user5402 tx6584 Product not found
+2025-08-15 19:10:18 checkout 200 70ms user6284 tx7138 Product not found
+2025-08-15 19:10:31 checkout 200 324ms user5472 tx9559 Purchased AirPods Pro
+2025-08-15 19:10:49 search 200 245ms user8344 tx8655 Searched for Samsung Galaxy S23
+2025-08-15 19:11:40 checkout 200 71ms user3461 tx5312 Access denied to product
+2025-08-15 19:12:02 search 500 92ms user5233 tx5822 Search result not found
+2025-08-15 19:12:50 checkout 500 265ms user1177 tx5573 Checkout failed due to DB error
+2025-08-15 19:13:08 payment 200 129ms user6998 tx8692 Payment completed
+2025-08-15 19:13:43 payment 200 200ms user3334 tx7705 Payment declined
+2025-08-15 19:14:02 payment 200 238ms user6613 tx3405 Payment processed
+2025-08-15 19:14:24 checkout 200 152ms user3833 tx3445 Purchased AirPods Pro
+2025-08-15 19:15:16 search 200 67ms user5486 tx6061 Search result not found
+2025-08-15 19:15:36 search 500 273ms user6650 tx9229 Search result not found
+2025-08-15 19:16:22 payment 200 305ms user3738 tx5092 Payment service unavailable
+2025-08-15 19:16:57 checkout 200 280ms user8091 tx9323 Checkout failed due to DB error
+2025-08-15 19:17:40 payment 200 214ms user6306 tx4386 Payment processed
+2025-08-15 19:18:29 search 500 373ms user8340 tx7934 Searched for Samsung Galaxy S23
+2025-08-15 19:19:17 search 200 302ms user1499 tx5441 Searched for MacBook Pro 16
+2025-08-15 19:19:37 checkout 200 286ms user5284 tx5413 Access denied to product
+2025-08-15 19:20:03 payment 200 343ms user4371 tx3706 Payment completed
+2025-08-15 19:20:39 search 200 465ms user8560 tx4630 Searched for MacBook Pro 16
+2025-08-15 19:21:39 checkout 200 138ms user9022 tx2258 Purchased iPhone 13
+2025-08-15 19:22:22 search 200 468ms user4456 tx7399 Searched for Samsung Galaxy S23
+2025-08-15 19:23:20 checkout 200 487ms user8681 tx1520 Purchased iPhone 13
+2025-08-15 19:24:08 payment 403 373ms user6860 tx7369 Payment gateway error
+2025-08-15 19:24:33 payment 200 247ms user5046 tx2490 Payment completed
+2025-08-15 19:25:17 checkout 200 288ms user9087 tx7449 Purchased iPhone 13
+2025-08-15 19:26:14 checkout 200 445ms user1688 tx6011 Access denied to product
+2025-08-15 19:26:38 checkout 200 373ms user9709 tx8909 Purchased AirPods Pro
+2025-08-15 19:27:04 checkout 404 97ms user7019 tx5859 Product not found
+2025-08-15 19:27:30 checkout 500 333ms user9958 tx5868 Purchased iPhone 13
+2025-08-15 19:28:29 search 200 252ms user9177 tx8921 Searched for MacBook Pro 16
+2025-08-15 19:28:48 search 200 419ms user4388 tx1308 Searched for Nintendo Switch OLED
+2025-08-15 19:29:14 payment 200 150ms user1227 tx9132 Payment processed
+2025-08-15 19:29:56 checkout 200 330ms user3268 tx8756 Access denied to product
+2025-08-15 19:30:25 search 200 281ms user8884 tx3110 Searched for Samsung Galaxy S23
+2025-08-15 19:30:58 search 200 231ms user1497 tx7921 Searched for Samsung Galaxy S23
+2025-08-15 19:31:43 search 200 284ms user4234 tx6998 Searched for Samsung Galaxy S23
+2025-08-15 19:31:53 checkout 200 497ms user7051 tx4746 Product not found
+2025-08-15 19:32:11 payment 200 63ms user8150 tx3461 Payment gateway error
+2025-08-15 19:32:47 checkout 200 264ms user7557 tx3720 Purchased iPhone 13
+2025-08-15 19:33:25 payment 200 483ms user5328 tx2929 Payment service unavailable
+2025-08-15 19:33:43 checkout 200 407ms user5797 tx1615 Purchased iPhone 13
+2025-08-15 19:33:54 checkout 200 413ms user8931 tx1766 Access denied to product
+2025-08-15 19:34:13 checkout 200 71ms user2342 tx4121 Purchased iPhone 13
+2025-08-15 19:35:08 search 200 309ms user8515 tx1812 Searched for Samsung Galaxy S23
+2025-08-15 19:35:28 search 200 229ms user3807 tx9735 Search result not found
+2025-08-15 19:36:23 search 200 106ms user9631 tx3053 Searched for MacBook Pro 16
+2025-08-15 19:36:52 payment 200 86ms user4642 tx2167 Payment completed
+2025-08-15 19:37:31 search 200 402ms user8713 tx7864 Search result not found
+2025-08-15 19:38:06 checkout 200 70ms user1012 tx8655 Product not found
+2025-08-15 19:38:16 search 200 270ms user4140 tx7420 Searched for Samsung Galaxy S23
+2025-08-15 19:38:37 search 200 372ms user6424 tx1037 Searched for MacBook Pro 16
+2025-08-15 19:39:00 payment 200 89ms user8597 tx2863 Payment gateway error
+2025-08-15 19:39:51 payment 200 72ms user6900 tx2326 Payment gateway error
+2025-08-15 19:40:11 payment 200 244ms user2426 tx9637 Payment gateway error
+2025-08-15 19:41:00 checkout 200 458ms user7451 tx9311 Purchased iPhone 13
+2025-08-15 19:42:00 payment 200 68ms user4211 tx6338 Payment processed
+2025-08-15 19:42:36 search 200 335ms user1885 tx7740 Searched for Samsung Galaxy S23
+2025-08-15 19:42:56 checkout 200 349ms user4083 tx5079 Product not found
+2025-08-15 19:43:16 payment 200 93ms user3271 tx9427 Payment processed
+2025-08-15 19:44:04 search 200 233ms user2649 tx2425 Searched for Nintendo Switch OLED
+2025-08-15 19:44:18 search 200 171ms user1247 tx2302 Searched for MacBook Pro 16
+2025-08-15 19:44:47 search 200 355ms user5854 tx9044 Searched for Samsung Galaxy S23
+2025-08-15 19:45:41 checkout 200 110ms user8344 tx8064 Purchased iPhone 13
+2025-08-15 19:45:57 payment 200 176ms user6973 tx4695 Payment processed
+2025-08-15 19:46:51 checkout 200 189ms user6389 tx1304 Product not found
+2025-08-15 19:47:05 checkout 200 351ms user2285 tx5866 Product not found
+2025-08-15 19:47:41 search 200 411ms user6936 tx7069 Searched for Nintendo Switch OLED
+2025-08-15 19:47:53 search 200 268ms user3350 tx3569 Searched for MacBook Pro 16
+2025-08-15 19:48:08 search 200 348ms user2142 tx6855 Searched for Nintendo Switch OLED
+2025-08-15 19:48:35 payment 200 127ms user8637 tx2930 Payment processed
+2025-08-15 19:49:08 search 200 436ms user6030 tx3190 Searched for Nintendo Switch OLED
+2025-08-15 19:49:39 checkout 200 431ms user3364 tx7716 Product not found
+2025-08-15 19:50:18 payment 200 198ms user3467 tx6232 Payment processed
+2025-08-15 19:50:34 checkout 200 301ms user7463 tx9253 Checkout failed due to DB error
+2025-08-15 19:50:54 checkout 500 70ms user2643 tx7109 Purchased iPhone 13
+2025-08-15 19:51:29 payment 200 312ms user1502 tx2978 Payment completed
+2025-08-15 19:51:49 payment 200 235ms user7259 tx1951 Payment processed
+2025-08-15 19:52:43 search 200 397ms user6048 tx3312 Searched for Nintendo Switch OLED
+2025-08-15 19:53:36 checkout 200 405ms user7927 tx6181 Purchased AirPods Pro
+2025-08-15 19:54:18 checkout 200 436ms user2367 tx5302 Checkout failed due to DB error
+2025-08-15 19:55:10 search 200 106ms user6495 tx4455 Searched for MacBook Pro 16
+2025-08-15 19:56:04 checkout 200 343ms user6133 tx6068 Purchased AirPods Pro
+2025-08-15 19:56:51 payment 500 376ms user6182 tx4052 Payment completed
+2025-08-15 19:57:49 checkout 404 106ms user7771 tx3228 Product not found
+2025-08-15 19:58:15 search 200 154ms user3882 tx6380 Searched for MacBook Pro 16
+2025-08-15 19:58:43 checkout 404 182ms user7250 tx3831 Checkout failed due to DB error
+2025-08-15 19:59:06 search 200 90ms user1811 tx5759 Search result not found
+2025-08-15 19:59:58 search 200 164ms user8106 tx8625 Searched for Nintendo Switch OLED
+2025-08-15 20:00:35 payment 403 184ms user8549 tx1767 Payment gateway error
+2025-08-15 20:01:18 search 200 362ms user6285 tx6410 Searched for Samsung Galaxy S23
+2025-08-15 20:01:54 payment 200 158ms user5036 tx3945 Payment processed
+2025-08-15 20:02:33 checkout 200 488ms user7490 tx5076 Checkout failed due to DB error
+2025-08-15 20:03:21 checkout 500 145ms user9878 tx2444 Purchased iPhone 13
+2025-08-15 20:03:21 search 200 178ms user7936 tx2929 Searched for Samsung Galaxy S23
+2025-08-15 20:03:21 search 200 442ms user2167 tx7966 Searched for MacBook Pro 16
+2025-08-15 20:03:21 search 200 263ms user1864 tx2762 Searched for Nintendo Switch OLED
+2025-08-15 20:03:21 search 200 150ms user6422 tx8073 Searched for MacBook Pro 16
+2025-08-15 20:03:21 checkout 200 244ms user1584 tx8901 Access denied to product
+2025-08-15 20:03:21 checkout 200 232ms user2262 tx1912 Access denied to product
+2025-08-15 20:04:02 payment 200 244ms user6238 tx6870 Payment completed
+2025-08-15 20:04:29 checkout 200 214ms user2877 tx6520 Access denied to product
+2025-08-15 20:04:47 payment 500 341ms user7066 tx6640 Payment service unavailable
+2025-08-15 20:05:35 search 200 121ms user8956 tx5937 Searched for MacBook Pro 16
+2025-08-15 20:06:06 payment 200 430ms user9670 tx1897 Payment declined
+2025-08-15 20:06:33 checkout 200 421ms user3890 tx9321 Purchased iPhone 13
+2025-08-15 20:06:48 search 200 182ms user9060 tx7504 Search result not found
+2025-08-15 20:07:45 checkout 403 208ms user6436 tx1261 Purchased iPhone 13
+2025-08-15 20:08:14 payment 200 228ms user8451 tx8661 Payment processed
+2025-08-15 20:08:44 checkout 200 217ms user8860 tx2542 Product not found
+2025-08-15 20:09:38 search 200 287ms user8354 tx1242 Search result not found
+2025-08-15 20:09:54 checkout 404 106ms user7124 tx7932 Access denied to product
+2025-08-15 20:10:39 checkout 200 108ms user7235 tx6395 Product not found
+2025-08-15 20:11:36 search 200 104ms user8045 tx6745 Searched for Samsung Galaxy S23
+2025-08-15 20:12:00 payment 200 460ms user1015 tx4459 Payment processed
+2025-08-15 20:12:22 payment 200 239ms user2714 tx5550 Payment declined
+2025-08-15 20:13:16 payment 500 256ms user4135 tx3432 Payment declined
+2025-08-15 20:14:12 search 200 112ms user9871 tx2504 Searched for MacBook Pro 16
+2025-08-15 20:15:09 payment 200 493ms user6467 tx1139 Payment declined
+2025-08-15 20:15:29 checkout 200 374ms user1911 tx2875 Purchased AirPods Pro
+2025-08-15 20:16:26 search 200 246ms user7621 tx8361 Searched for Samsung Galaxy S23
+2025-08-15 20:17:23 payment 200 155ms user1136 tx8461 Payment declined
+2025-08-15 20:18:20 search 200 435ms user9054 tx3265 Searched for Samsung Galaxy S23
+2025-08-15 20:19:10 search 200 222ms user5226 tx9337 Searched for Nintendo Switch OLED
+2025-08-15 20:20:07 search 200 177ms user2801 tx3810 Searched for Nintendo Switch OLED
+2025-08-15 20:20:46 payment 200 117ms user5015 tx6434 Payment gateway error
+2025-08-15 20:21:15 search 200 292ms user6980 tx8380 Search result not found
+2025-08-15 20:21:55 payment 200 265ms user5699 tx6689 Payment declined
+2025-08-15 20:22:20 search 200 104ms user5807 tx9048 Search result not found
+2025-08-15 20:22:40 payment 200 320ms user6720 tx1979 Payment gateway error
+2025-08-15 20:22:53 checkout 200 140ms user5239 tx4095 Purchased iPhone 13
+2025-08-15 20:23:08 search 200 371ms user1025 tx5193 Searched for Nintendo Switch OLED
+2025-08-15 20:23:20 checkout 200 285ms user4242 tx7872 Purchased AirPods Pro
+2025-08-15 20:24:03 payment 200 319ms user9397 tx8694 Payment service unavailable
+2025-08-15 20:24:31 checkout 200 306ms user5140 tx6246 Access denied to product
+2025-08-15 20:24:56 payment 200 191ms user8549 tx7673 Payment gateway error
+2025-08-15 20:25:27 search 200 351ms user6164 tx7534 Searched for MacBook Pro 16
+2025-08-15 20:26:04 payment 200 67ms user9357 tx1753 Payment completed
+2025-08-15 20:26:53 checkout 200 330ms user8380 tx1533 Purchased AirPods Pro
+2025-08-15 20:27:52 search 200 79ms user4022 tx6788 Search result not found
+2025-08-15 20:28:47 search 200 104ms user7176 tx3895 Search result not found
+2025-08-15 20:28:47 checkout 200 322ms user2068 tx9788 Purchased iPhone 13
+2025-08-15 20:28:47 checkout 200 125ms user8979 tx5916 Access denied to product
+2025-08-15 20:28:47 checkout 200 459ms user2195 tx8420 Checkout failed due to DB error
+2025-08-15 20:28:47 payment 200 352ms user6214 tx5092 Payment service unavailable
+2025-08-15 20:28:47 search 200 388ms user4741 tx2145 Searched for MacBook Pro 16
+2025-08-15 20:29:40 checkout 200 160ms user6364 tx6894 Access denied to product
+2025-08-15 20:30:23 checkout 200 443ms user1049 tx4858 Purchased iPhone 13
+2025-08-15 20:31:12 payment 200 230ms user4562 tx6022 Payment completed
+2025-08-15 20:31:46 search 200 248ms user6577 tx6305 Searched for Samsung Galaxy S23
+2025-08-15 20:32:39 checkout 200 331ms user5376 tx4915 Access denied to product
+2025-08-15 20:33:26 payment 200 484ms user2813 tx1971 Payment processed
+2025-08-15 20:34:20 search 200 76ms user3729 tx6767 Search result not found
+2025-08-15 20:34:50 checkout 200 458ms user8879 tx3702 Purchased AirPods Pro
+2025-08-15 20:35:22 search 200 340ms user2748 tx2833 Search result not found
+2025-08-15 20:35:48 payment 200 303ms user8884 tx7711 Payment processed
+2025-08-15 20:36:04 search 200 90ms user2908 tx8388 Search result not found
+2025-08-15 20:36:53 search 200 433ms user1743 tx6438 Searched for MacBook Pro 16
+2025-08-15 20:37:42 search 200 225ms user6071 tx5671 Searched for Samsung Galaxy S23
+2025-08-15 20:38:30 search 200 436ms user8575 tx1987 Search result not found
+2025-08-15 20:38:58 payment 200 408ms user6392 tx6868 Payment completed
+2025-08-15 20:39:10 checkout 200 469ms user1876 tx6833 Product not found
+2025-08-15 20:39:31 search 200 302ms user3011 tx4270 Searched for Nintendo Switch OLED
+2025-08-15 20:40:04 checkout 200 153ms user4256 tx1553 Purchased AirPods Pro
+2025-08-15 20:40:38 search 500 107ms user6951 tx4815 Searched for MacBook Pro 16
+2025-08-15 20:41:02 search 200 346ms user2157 tx6435 Searched for Samsung Galaxy S23
+2025-08-15 20:41:50 search 200 215ms user3960 tx4849 Searched for MacBook Pro 16
+2025-08-15 20:42:20 search 200 182ms user2695 tx5760 Searched for Samsung Galaxy S23
+2025-08-15 20:42:42 search 200 347ms user5446 tx3082 Search result not found
+2025-08-15 20:43:23 checkout 200 122ms user9169 tx9119 Checkout failed due to DB error
+2025-08-15 20:44:11 checkout 200 482ms user5242 tx5801 Purchased iPhone 13
+2025-08-15 20:44:22 payment 200 500ms user3454 tx9937 Payment declined
+2025-08-15 20:45:04 search 200 404ms user4379 tx8460 Search result not found
+2025-08-15 20:45:45 payment 500 194ms user2092 tx7576 Payment processed
+2025-08-15 20:46:07 checkout 200 408ms user6756 tx7052 Checkout failed due to DB error
+2025-08-15 20:46:46 payment 200 398ms user4658 tx7537 Payment processed
+2025-08-15 20:47:44 checkout 200 123ms user4708 tx4150 Access denied to product
+2025-08-15 20:48:39 payment 404 101ms user7160 tx6104 Payment declined
+2025-08-15 20:48:56 payment 200 158ms user5537 tx5435 Payment gateway error
+2025-08-15 20:49:56 payment 200 337ms user7711 tx2315 Payment processed
+2025-08-15 20:50:38 checkout 200 487ms user8096 tx9734 Checkout failed due to DB error
+2025-08-15 20:50:55 payment 200 263ms user4519 tx6463 Payment processed
+2025-08-15 20:51:29 checkout 200 493ms user3064 tx1851 Checkout failed due to DB error
+2025-08-15 20:52:15 payment 200 241ms user7577 tx9297 Payment processed
+2025-08-15 20:53:11 payment 403 239ms user3029 tx1345 Payment gateway error
+2025-08-15 20:53:48 payment 200 189ms user7584 tx4548 Payment declined
+2025-08-15 20:54:20 payment 200 264ms user2522 tx3242 Payment processed
+2025-08-15 20:55:11 search 200 500ms user2559 tx1494 Searched for Nintendo Switch OLED
+2025-08-15 20:56:03 checkout 200 254ms user7220 tx2197 Access denied to product
+2025-08-15 20:56:57 payment 200 485ms user7009 tx6065 Payment gateway error
+2025-08-15 20:57:12 search 200 403ms user1639 tx4044 Searched for MacBook Pro 16
+2025-08-15 20:58:02 payment 200 476ms user4991 tx3203 Payment declined
+2025-08-15 20:58:42 checkout 200 363ms user1950 tx8532 Checkout failed due to DB error
+2025-08-15 20:59:09 search 200 238ms user9575 tx4153 Search result not found
+2025-08-15 21:00:01 search 200 302ms user2126 tx6368 Searched for Nintendo Switch OLED
+2025-08-15 21:00:55 checkout 200 384ms user7310 tx2479 Access denied to product
+2025-08-15 21:01:13 payment 200 330ms user1295 tx2560 Payment processed
+2025-08-15 21:01:39 search 200 156ms user3896 tx5699 Searched for Samsung Galaxy S23
+2025-08-15 21:02:24 checkout 200 393ms user9803 tx3056 Purchased iPhone 13
+2025-08-15 21:03:16 search 200 240ms user8098 tx8363 Search result not found
+2025-08-15 21:04:14 search 200 152ms user5668 tx2624 Searched for Samsung Galaxy S23
+2025-08-15 21:04:59 checkout 200 204ms user6163 tx6239 Access denied to product
+2025-08-15 21:05:51 search 200 326ms user2089 tx2112 Search result not found
+2025-08-15 21:06:45 checkout 404 471ms user3944 tx6823 Product not found
+2025-08-15 21:07:02 payment 404 117ms user2318 tx3376 Payment completed
+2025-08-15 21:07:38 search 200 388ms user5429 tx6092 Searched for Nintendo Switch OLED
+2025-08-15 21:07:57 payment 200 278ms user1905 tx6879 Payment declined
+2025-08-15 21:08:41 checkout 200 317ms user4587 tx2196 Access denied to product
+2025-08-15 21:09:28 payment 200 494ms user7471 tx9091 Payment service unavailable
+2025-08-15 21:10:25 search 200 108ms user9361 tx3860 Searched for MacBook Pro 16
+2025-08-15 21:10:52 search 200 330ms user5453 tx7475 Searched for Samsung Galaxy S23
+2025-08-15 21:11:17 checkout 200 254ms user6499 tx8740 Product not found
+2025-08-15 21:11:33 payment 200 222ms user1909 tx1360 Payment gateway error
+2025-08-15 21:11:33 payment 404 212ms user2310 tx9302 Payment gateway error
+2025-08-15 21:11:33 checkout 200 98ms user6027 tx1520 Access denied to product
+2025-08-15 21:11:33 checkout 404 330ms user6829 tx1586 Checkout failed due to DB error
+2025-08-15 21:11:33 payment 200 372ms user2630 tx7971 Payment completed
+2025-08-15 21:11:33 search 200 229ms user4516 tx2722 Search result not found
+2025-08-15 21:11:33 checkout 404 362ms user8810 tx5121 Checkout failed due to DB error
+2025-08-15 21:11:33 search 403 231ms user5396 tx8062 Searched for Nintendo Switch OLED
+2025-08-15 21:11:33 payment 200 238ms user3572 tx5436 Payment gateway error
+2025-08-15 21:11:33 payment 500 222ms user1627 tx5950 Payment completed
+2025-08-15 21:11:33 checkout 200 452ms user3614 tx1781 Product not found
+2025-08-15 21:11:33 checkout 500 326ms user4040 tx1292 Purchased AirPods Pro
+2025-08-15 21:11:33 checkout 200 135ms user4712 tx3085 Product not found
+2025-08-15 21:11:33 payment 200 328ms user3754 tx1938 Payment service unavailable
+2025-08-15 21:11:33 checkout 200 416ms user9166 tx4358 Purchased iPhone 13
+2025-08-15 21:12:03 checkout 200 399ms user4983 tx8196 Checkout failed due to DB error
+2025-08-15 21:12:32 search 200 362ms user1322 tx3563 Searched for Nintendo Switch OLED
+2025-08-15 21:13:24 search 200 383ms user1946 tx9795 Searched for Nintendo Switch OLED
+2025-08-15 21:14:21 checkout 404 270ms user9905 tx6277 Purchased iPhone 13
+2025-08-15 21:14:39 search 500 185ms user6470 tx3688 Searched for MacBook Pro 16
+2025-08-15 21:15:31 checkout 200 388ms user5467 tx1269 Purchased AirPods Pro
+2025-08-15 21:15:55 payment 200 266ms user7038 tx9018 Payment completed
+2025-08-15 21:16:18 payment 200 208ms user2254 tx8279 Payment processed
+2025-08-15 21:16:43 checkout 200 146ms user6965 tx1186 Access denied to product
+2025-08-15 21:17:11 checkout 404 457ms user3694 tx2076 Purchased AirPods Pro
+2025-08-15 21:18:05 search 403 120ms user5349 tx3312 Searched for Samsung Galaxy S23
+2025-08-15 21:18:57 search 200 326ms user9327 tx1490 Search result not found
+2025-08-15 21:19:19 payment 200 185ms user8353 tx9843 Payment service unavailable
+2025-08-15 21:20:10 checkout 200 152ms user3245 tx7914 Product not found
+2025-08-15 21:20:55 search 200 428ms user9361 tx4591 Searched for Samsung Galaxy S23
+2025-08-15 21:21:43 search 500 352ms user9759 tx5830 Searched for MacBook Pro 16
+2025-08-15 21:22:34 search 200 204ms user7818 tx8776 Searched for Samsung Galaxy S23
+2025-08-15 21:23:24 search 200 436ms user7390 tx8754 Search result not found
+2025-08-15 21:23:45 checkout 200 297ms user4629 tx4640 Access denied to product
+2025-08-15 21:24:01 payment 200 147ms user3223 tx2186 Payment processed
+2025-08-15 21:24:46 checkout 200 215ms user5773 tx7738 Purchased AirPods Pro
+2025-08-15 21:25:38 search 200 252ms user7695 tx5923 Searched for Nintendo Switch OLED
+2025-08-15 21:26:25 checkout 200 185ms user7372 tx8426 Access denied to product
+2025-08-15 21:27:12 checkout 200 338ms user5838 tx8369 Purchased iPhone 13
+2025-08-15 21:28:10 payment 200 453ms user9285 tx7202 Payment gateway error
+2025-08-15 21:28:40 search 200 180ms user8413 tx6109 Search result not found
+2025-08-15 21:28:58 checkout 200 86ms user3113 tx4650 Checkout failed due to DB error
+2025-08-15 21:29:36 checkout 200 69ms user2415 tx1557 Purchased iPhone 13
+2025-08-15 21:30:02 payment 404 493ms user3883 tx5338 Payment gateway error
+2025-08-15 21:30:40 search 200 211ms user4427 tx2233 Search result not found
+2025-08-15 21:31:33 search 200 440ms user1289 tx4590 Searched for Nintendo Switch OLED
+2025-08-15 21:32:29 search 200 267ms user2082 tx4848 Searched for Samsung Galaxy S23
+2025-08-15 21:33:29 payment 200 90ms user2633 tx2767 Payment gateway error
+2025-08-15 21:33:45 checkout 200 60ms user2872 tx9820 Product not found
+2025-08-15 21:33:58 payment 200 275ms user5498 tx9843 Payment completed
+2025-08-15 21:34:28 search 403 399ms user8017 tx5065 Search result not found
+2025-08-15 21:35:15 checkout 200 218ms user3544 tx4133 Purchased AirPods Pro
+2025-08-15 21:35:49 payment 200 90ms user5214 tx7896 Payment declined
+2025-08-15 21:36:28 payment 200 303ms user8675 tx3832 Payment processed
+2025-08-15 21:36:40 search 200 295ms user8873 tx7883 Search result not found
+2025-08-15 21:37:28 payment 200 479ms user7421 tx7845 Payment declined
+2025-08-15 21:38:07 checkout 200 352ms user7024 tx9503 Purchased AirPods Pro
+2025-08-15 21:38:25 checkout 200 214ms user5836 tx2769 Checkout failed due to DB error
+2025-08-15 21:39:00 checkout 200 188ms user5291 tx8126 Purchased iPhone 13
+2025-08-15 21:39:53 search 200 356ms user5880 tx6373 Searched for Samsung Galaxy S23
+2025-08-15 21:40:37 payment 200 180ms user3513 tx2206 Payment declined
+2025-08-15 21:40:51 checkout 500 269ms user3572 tx9785 Access denied to product
+2025-08-15 21:41:16 checkout 200 421ms user3245 tx7703 Checkout failed due to DB error
+2025-08-15 21:42:03 search 200 413ms user3330 tx6876 Search result not found
+2025-08-15 21:42:20 payment 200 491ms user5809 tx8440 Payment completed
+2025-08-15 21:42:58 payment 200 220ms user1416 tx8113 Payment processed
+2025-08-15 21:43:50 search 200 281ms user3478 tx8594 Searched for Samsung Galaxy S23
+2025-08-15 21:44:42 checkout 200 124ms user8408 tx5582 Access denied to product
+2025-08-15 21:44:42 search 200 218ms user7200 tx5973 Searched for MacBook Pro 16
+2025-08-15 21:44:42 payment 200 383ms user3857 tx6055 Payment gateway error
+2025-08-15 21:44:42 checkout 200 284ms user6702 tx1977 Purchased iPhone 13
+2025-08-15 21:44:42 search 403 145ms user2600 tx2327 Searched for MacBook Pro 16
+2025-08-15 21:44:42 search 200 325ms user6472 tx8955 Searched for Samsung Galaxy S23
+2025-08-15 21:44:42 payment 200 155ms user1296 tx7872 Payment processed
+2025-08-15 21:44:42 payment 200 219ms user7231 tx9421 Payment completed
+2025-08-15 21:44:42 payment 403 350ms user8195 tx7697 Payment declined
+2025-08-15 21:44:42 search 200 464ms user1839 tx4844 Searched for Samsung Galaxy S23
+2025-08-15 21:44:57 checkout 404 309ms user6296 tx7619 Access denied to product
+2025-08-15 21:44:57 search 403 240ms user9658 tx5810 Searched for Samsung Galaxy S23
+2025-08-15 21:44:57 payment 404 458ms user4837 tx8702 Payment completed
+2025-08-15 21:44:57 payment 200 64ms user1407 tx5353 Payment service unavailable
+2025-08-15 21:44:57 payment 200 492ms user1084 tx8720 Payment declined
+2025-08-15 21:44:57 payment 500 492ms user3039 tx6938 Payment completed
+2025-08-15 21:44:57 payment 200 202ms user9616 tx5846 Payment declined
+2025-08-15 21:44:57 checkout 200 290ms user1015 tx2891 Purchased iPhone 13
+2025-08-15 21:44:57 search 500 420ms user4591 tx2047 Searched for Samsung Galaxy S23
+2025-08-15 21:44:57 search 403 217ms user7333 tx2597 Searched for MacBook Pro 16
+2025-08-15 21:45:35 payment 200 440ms user4631 tx9849 Payment processed
+2025-08-15 21:46:19 checkout 200 253ms user2571 tx4921 Product not found
+2025-08-15 21:46:38 search 200 111ms user5783 tx5102 Searched for MacBook Pro 16
+2025-08-15 21:46:58 search 200 463ms user6849 tx7291 Searched for Samsung Galaxy S23
+2025-08-15 21:47:43 payment 200 98ms user5788 tx8267 Payment declined
+2025-08-15 21:48:23 checkout 200 383ms user9777 tx5440 Product not found
+2025-08-15 21:49:00 search 200 104ms user3247 tx5689 Searched for Nintendo Switch OLED
+2025-08-15 21:49:53 search 200 92ms user5776 tx4936 Searched for MacBook Pro 16
+2025-08-15 21:50:11 payment 200 454ms user2723 tx5763 Payment processed
+2025-08-15 21:51:01 payment 200 223ms user7252 tx8606 Payment completed
+2025-08-15 21:51:48 checkout 200 415ms user3034 tx9775 Product not found
+2025-08-15 21:52:39 checkout 200 88ms user1268 tx6760 Access denied to product
+2025-08-15 21:53:30 payment 200 446ms user4233 tx1532 Payment service unavailable
+2025-08-15 21:54:00 search 200 393ms user8629 tx9189 Search result not found
+2025-08-15 21:54:24 checkout 200 279ms user7978 tx5174 Purchased AirPods Pro
+2025-08-15 21:54:36 search 200 470ms user5601 tx8872 Searched for Nintendo Switch OLED
+2025-08-15 21:55:26 payment 200 131ms user2315 tx6696 Payment processed
+2025-08-15 21:56:17 checkout 200 144ms user1603 tx5800 Product not found
+2025-08-15 21:57:08 payment 200 178ms user6067 tx8011 Payment processed
+2025-08-15 21:57:45 search 500 481ms user5021 tx2738 Searched for MacBook Pro 16
+2025-08-15 21:57:45 checkout 200 482ms user4881 tx9265 Purchased iPhone 13
+2025-08-15 21:57:45 search 200 70ms user5027 tx4930 Searched for MacBook Pro 16
+2025-08-15 21:57:45 search 200 120ms user5965 tx4298 Searched for MacBook Pro 16
+2025-08-15 21:57:45 payment 200 219ms user9296 tx8627 Payment declined
+2025-08-15 21:57:45 checkout 200 195ms user7125 tx7685 Purchased iPhone 13
+2025-08-15 21:57:45 search 200 173ms user7017 tx9943 Search result not found
+2025-08-15 21:57:45 checkout 403 479ms user4884 tx9780 Purchased iPhone 13
+2025-08-15 21:57:45 search 200 467ms user5180 tx8122 Searched for Nintendo Switch OLED
+2025-08-15 21:57:45 search 200 449ms user5967 tx7095 Searched for Nintendo Switch OLED
+2025-08-15 21:57:45 payment 404 298ms user4855 tx4742 Payment declined
+2025-08-15 21:58:31 checkout 500 487ms user6613 tx6961 Purchased iPhone 13
+2025-08-15 21:58:52 checkout 200 249ms user5689 tx3220 Product not found
+2025-08-15 21:59:15 payment 200 245ms user2393 tx9534 Payment processed
+2025-08-15 21:59:52 search 200 82ms user4749 tx6109 Searched for MacBook Pro 16
+2025-08-15 22:00:41 payment 200 486ms user3505 tx6183 Payment completed
+2025-08-15 22:01:14 checkout 403 361ms user2094 tx3566 Purchased iPhone 13
+2025-08-15 22:02:05 payment 200 377ms user5287 tx8240 Payment gateway error
+2025-08-15 22:02:16 payment 200 145ms user6348 tx6428 Payment gateway error
+2025-08-15 22:03:03 payment 200 401ms user5006 tx1125 Payment declined
+2025-08-15 22:03:44 checkout 200 218ms user7793 tx5724 Product not found
+2025-08-15 22:04:23 search 200 180ms user1100 tx9933 Search result not found
+2025-08-15 22:05:04 payment 200 76ms user2629 tx6990 Payment declined
+2025-08-15 22:05:51 search 200 176ms user4944 tx3279 Searched for MacBook Pro 16
+2025-08-15 22:06:41 search 404 356ms user1626 tx2699 Searched for Nintendo Switch OLED
+2025-08-15 22:06:41 payment 200 291ms user7098 tx5324 Payment gateway error
+2025-08-15 22:06:41 checkout 200 165ms user3335 tx4824 Access denied to product
+2025-08-15 22:06:41 checkout 500 321ms user1295 tx8371 Access denied to product
+2025-08-15 22:06:41 payment 200 413ms user6922 tx3841 Payment declined
+2025-08-15 22:07:06 payment 200 62ms user6300 tx2699 Payment declined
+2025-08-15 22:07:57 payment 200 107ms user8046 tx2670 Payment declined
+2025-08-15 22:08:27 payment 200 288ms user9498 tx8547 Payment gateway error
+2025-08-15 22:09:03 checkout 200 277ms user9451 tx8515 Access denied to product
+2025-08-15 22:09:56 payment 200 269ms user8165 tx8271 Payment processed
+2025-08-15 22:09:56 checkout 200 301ms user7109 tx2087 Access denied to product
+2025-08-15 22:09:56 search 200 107ms user3210 tx1465 Searched for Samsung Galaxy S23
+2025-08-15 22:09:56 checkout 200 358ms user7715 tx1880 Access denied to product
+2025-08-15 22:09:56 checkout 200 378ms user9803 tx2054 Product not found
+2025-08-15 22:09:56 search 404 355ms user2790 tx7501 Searched for Nintendo Switch OLED
+2025-08-15 22:09:56 checkout 200 355ms user3700 tx5181 Access denied to product
+2025-08-15 22:09:56 checkout 200 252ms user3729 tx4624 Access denied to product
+2025-08-15 22:09:56 search 200 94ms user3749 tx2927 Searched for MacBook Pro 16
+2025-08-15 22:09:56 payment 500 100ms user4824 tx4607 Payment service unavailable
+2025-08-15 22:10:39 payment 200 139ms user7250 tx7293 Payment gateway error
+2025-08-15 22:10:54 search 200 272ms user1271 tx3062 Search result not found
+2025-08-15 22:11:12 checkout 200 302ms user3278 tx6051 Checkout failed due to DB error
+2025-08-15 22:11:59 search 200 267ms user6325 tx3883 Searched for Samsung Galaxy S23
+2025-08-15 22:12:34 search 404 206ms user3615 tx2173 Searched for Samsung Galaxy S23
+2025-08-15 22:13:12 checkout 200 418ms user9968 tx7987 Product not found
+2025-08-15 22:14:08 payment 200 112ms user1038 tx7362 Payment processed
+2025-08-15 22:14:08 checkout 404 297ms user6146 tx2056 Product not found
+2025-08-15 22:14:08 checkout 200 163ms user8890 tx2635 Checkout failed due to DB error
+2025-08-15 22:14:08 search 200 159ms user7437 tx7464 Searched for MacBook Pro 16
+2025-08-15 22:14:08 payment 200 106ms user6024 tx6939 Payment completed
+2025-08-15 22:14:08 search 500 422ms user4411 tx8745 Searched for MacBook Pro 16
+2025-08-15 22:14:08 search 403 122ms user5721 tx5688 Searched for Samsung Galaxy S23
+2025-08-15 22:14:40 payment 200 440ms user9003 tx9263 Payment completed
+2025-08-15 22:14:59 checkout 404 148ms user4673 tx9994 Checkout failed due to DB error
+2025-08-15 22:14:59 search 200 340ms user3074 tx1645 Searched for Samsung Galaxy S23
+2025-08-15 22:14:59 search 200 244ms user8285 tx4604 Search result not found
+2025-08-15 22:14:59 checkout 200 225ms user2222 tx6935 Product not found
+2025-08-15 22:14:59 search 200 108ms user2287 tx8138 Searched for Samsung Galaxy S23
+2025-08-15 22:14:59 search 403 407ms user9027 tx4162 Search result not found
+2025-08-15 22:14:59 payment 500 271ms user4472 tx9149 Payment service unavailable
+2025-08-15 22:14:59 checkout 200 216ms user4129 tx6264 Access denied to product
+2025-08-15 22:14:59 payment 500 435ms user4026 tx5561 Payment processed
+2025-08-15 22:14:59 payment 200 438ms user6246 tx6196 Payment processed
+2025-08-15 22:14:59 search 200 264ms user2121 tx4684 Searched for MacBook Pro 16
+2025-08-15 22:14:59 payment 200 98ms user7169 tx2712 Payment completed
+2025-08-15 22:14:59 checkout 200 455ms user3553 tx2214 Product not found
+2025-08-15 22:14:59 checkout 200 285ms user5207 tx9122 Access denied to product
+2025-08-15 22:14:59 checkout 200 457ms user8117 tx9605 Product not found
+2025-08-15 22:15:57 search 200 107ms user8808 tx2976 Searched for Samsung Galaxy S23
+2025-08-15 22:16:30 search 200 133ms user4202 tx8875 Searched for Samsung Galaxy S23
+2025-08-15 22:17:30 search 200 170ms user2562 tx9304 Searched for Nintendo Switch OLED
+2025-08-15 22:18:23 payment 200 439ms user6137 tx8543 Payment processed
+2025-08-15 22:19:18 checkout 200 355ms user7062 tx2969 Purchased AirPods Pro
+2025-08-15 22:19:41 checkout 404 255ms user9275 tx2715 Purchased AirPods Pro
+2025-08-15 22:20:19 payment 200 369ms user7151 tx1944 Payment completed
+2025-08-15 22:21:18 payment 200 95ms user2721 tx6080 Payment completed
+2025-08-15 22:21:32 search 200 372ms user2214 tx6154 Searched for Samsung Galaxy S23
+2025-08-15 22:21:52 search 200 346ms user7357 tx6027 Searched for Nintendo Switch OLED
+2025-08-15 22:22:36 payment 200 92ms user3467 tx3140 Payment declined
+2025-08-15 22:23:32 payment 200 199ms user3028 tx7367 Payment declined
+2025-08-15 22:24:25 checkout 200 281ms user9615 tx1083 Access denied to product
+2025-08-15 22:24:38 search 200 493ms user4735 tx7801 Searched for MacBook Pro 16
+2025-08-15 22:25:31 payment 200 119ms user4814 tx7044 Payment declined
+2025-08-15 22:26:18 search 403 225ms user5950 tx7209 Searched for MacBook Pro 16
+2025-08-15 22:26:18 checkout 200 455ms user6719 tx8219 Access denied to product
+2025-08-15 22:26:18 payment 403 408ms user9543 tx4026 Payment processed
+2025-08-15 22:26:18 checkout 200 243ms user3661 tx5486 Access denied to product
+2025-08-15 22:26:18 payment 500 492ms user4165 tx4762 Payment processed
+2025-08-15 22:26:18 checkout 200 125ms user7935 tx2984 Purchased iPhone 13
+2025-08-15 22:26:18 checkout 200 150ms user4821 tx7655 Access denied to product
+2025-08-15 22:26:18 checkout 200 261ms user4177 tx2120 Product not found
+2025-08-15 22:26:18 checkout 403 195ms user6061 tx5077 Product not found
+2025-08-15 22:26:18 search 200 215ms user4259 tx7338 Searched for Samsung Galaxy S23
+2025-08-15 22:26:18 payment 200 393ms user2557 tx3707 Payment declined
+2025-08-15 22:26:41 payment 200 305ms user9087 tx9420 Payment service unavailable
+2025-08-15 22:27:02 checkout 200 70ms user4624 tx8994 Product not found
+2025-08-15 22:27:28 payment 404 478ms user5792 tx1204 Payment declined
+2025-08-15 22:27:28 search 200 216ms user9406 tx1751 Searched for Samsung Galaxy S23
+2025-08-15 22:27:28 checkout 404 488ms user7516 tx5471 Purchased iPhone 13
+2025-08-15 22:27:28 checkout 200 111ms user5295 tx6852 Checkout failed due to DB error
+2025-08-15 22:27:28 checkout 200 487ms user4053 tx7990 Purchased AirPods Pro
+2025-08-15 22:27:28 search 404 204ms user1635 tx7683 Searched for MacBook Pro 16
+2025-08-15 22:27:57 checkout 200 485ms user7343 tx5479 Purchased AirPods Pro
+2025-08-15 22:28:30 checkout 500 370ms user3480 tx4871 Checkout failed due to DB error
+2025-08-15 22:28:30 search 500 259ms user9373 tx4220 Search result not found
+2025-08-15 22:28:30 payment 200 343ms user6643 tx9736 Payment processed
+2025-08-15 22:28:30 checkout 200 275ms user1308 tx7778 Checkout failed due to DB error
+2025-08-15 22:28:30 checkout 200 171ms user8542 tx2972 Access denied to product
+2025-08-15 22:28:30 payment 200 292ms user5515 tx8016 Payment completed
+2025-08-15 22:28:30 checkout 200 412ms user1046 tx1571 Checkout failed due to DB error
+2025-08-15 22:28:30 search 200 78ms user9596 tx4262 Searched for Samsung Galaxy S23
+2025-08-15 22:28:30 search 403 287ms user7566 tx7205 Search result not found
+2025-08-15 22:28:30 checkout 500 416ms user8202 tx8770 Purchased iPhone 13
+2025-08-15 22:28:30 checkout 200 246ms user3167 tx9272 Checkout failed due to DB error
+2025-08-15 22:28:43 checkout 200 94ms user4943 tx8588 Purchased iPhone 13
+2025-08-15 22:29:31 search 403 159ms user1548 tx3182 Searched for MacBook Pro 16
+2025-08-15 22:29:49 checkout 200 220ms user7790 tx8972 Product not found
+2025-08-15 22:30:19 search 200 74ms user1874 tx4329 Searched for MacBook Pro 16
+2025-08-15 22:31:03 payment 200 432ms user6349 tx6318 Payment service unavailable
+2025-08-15 22:32:02 payment 200 488ms user2376 tx7234 Payment declined
+2025-08-15 22:33:00 checkout 200 190ms user6202 tx5562 Purchased iPhone 13
+2025-08-15 22:33:19 search 200 414ms user2213 tx1969 Searched for Samsung Galaxy S23
+2025-08-15 22:33:38 payment 200 72ms user1942 tx2110 Payment gateway error
+2025-08-15 22:34:14 checkout 200 464ms user8318 tx1195 Purchased iPhone 13
+2025-08-15 22:35:11 search 500 196ms user9222 tx2824 Searched for Samsung Galaxy S23
+2025-08-15 22:35:11 payment 200 318ms user6893 tx5285 Payment completed
+2025-08-15 22:35:11 search 200 159ms user8057 tx8236 Searched for Samsung Galaxy S23
+2025-08-15 22:35:11 payment 200 263ms user7668 tx2158 Payment processed
+2025-08-15 22:35:11 payment 200 167ms user5388 tx8622 Payment completed
+2025-08-15 22:35:11 search 200 407ms user9978 tx2475 Searched for Nintendo Switch OLED
+2025-08-15 22:35:11 payment 200 407ms user3539 tx3187 Payment processed
+2025-08-15 22:35:11 payment 500 500ms user1957 tx3990 Payment service unavailable
+2025-08-15 22:35:25 checkout 200 486ms user1938 tx8774 Checkout failed due to DB error
+2025-08-15 22:36:22 checkout 200 497ms user2127 tx7887 Product not found
+2025-08-15 22:36:53 search 200 404ms user8994 tx8375 Searched for MacBook Pro 16
+2025-08-15 22:37:44 search 200 276ms user4023 tx5342 Search result not found
+2025-08-15 22:38:18 checkout 200 359ms user5480 tx4737 Purchased AirPods Pro
+2025-08-15 22:38:44 payment 200 258ms user3262 tx8387 Payment processed
+2025-08-15 22:39:19 payment 200 333ms user3411 tx7823 Payment processed
+2025-08-15 22:39:59 search 200 127ms user4208 tx9962 Search result not found
+2025-08-15 22:40:55 payment 404 371ms user9991 tx6398 Payment completed
+2025-08-15 22:40:55 search 200 193ms user2363 tx1782 Searched for Nintendo Switch OLED
+2025-08-15 22:40:55 checkout 404 379ms user5202 tx8923 Checkout failed due to DB error
+2025-08-15 22:40:55 payment 200 305ms user1990 tx1011 Payment gateway error
+2025-08-15 22:40:55 search 200 496ms user1872 tx3981 Search result not found
+2025-08-15 22:40:55 search 200 85ms user1394 tx4739 Searched for MacBook Pro 16
+2025-08-15 22:41:55 search 200 139ms user8012 tx8902 Search result not found
+2025-08-15 22:42:30 payment 200 322ms user4000 tx9100 Payment gateway error
+2025-08-15 22:43:21 search 200 433ms user4799 tx6273 Searched for MacBook Pro 16
+2025-08-15 22:44:18 search 200 444ms user8549 tx7500 Searched for Nintendo Switch OLED
+2025-08-15 22:45:14 search 200 374ms user1637 tx6184 Searched for Samsung Galaxy S23
+2025-08-15 22:45:43 payment 200 293ms user9027 tx5671 Payment service unavailable
+2025-08-15 22:46:32 payment 404 218ms user2175 tx2548 Payment service unavailable
+2025-08-15 22:46:32 checkout 200 339ms user5387 tx5500 Access denied to product
+2025-08-15 22:46:32 search 200 280ms user3608 tx2747 Searched for Nintendo Switch OLED
+2025-08-15 22:46:32 checkout 200 157ms user7792 tx9351 Product not found
+2025-08-15 22:46:32 payment 200 111ms user8228 tx8283 Payment completed
+2025-08-15 22:46:32 payment 200 488ms user3731 tx7725 Payment gateway error
+2025-08-15 22:47:27 checkout 200 378ms user5815 tx4121 Purchased AirPods Pro
+2025-08-15 22:47:59 payment 200 467ms user7029 tx5137 Payment completed
+2025-08-15 22:48:43 search 200 99ms user1535 tx9057 Searched for MacBook Pro 16
+2025-08-15 22:49:34 payment 200 397ms user9773 tx2161 Payment declined
+2025-08-15 22:49:50 checkout 200 360ms user4645 tx6264 Product not found
+2025-08-15 22:50:47 payment 403 170ms user4475 tx1519 Payment service unavailable
+2025-08-15 22:51:00 checkout 200 189ms user7002 tx1758 Access denied to product
+2025-08-15 22:51:17 checkout 200 472ms user3430 tx1035 Product not found
+2025-08-15 22:52:12 payment 200 189ms user8273 tx4748 Payment gateway error
+2025-08-15 22:52:51 payment 200 109ms user2638 tx2021 Payment declined
+2025-08-15 22:53:35 checkout 200 493ms user2499 tx4444 Product not found
+2025-08-15 22:54:02 checkout 200 315ms user8574 tx1419 Checkout failed due to DB error
+2025-08-15 22:55:00 payment 200 500ms user2742 tx9844 Payment processed
+2025-08-15 22:55:56 checkout 200 427ms user9028 tx7915 Product not found
+2025-08-15 22:56:08 checkout 200 375ms user1569 tx2416 Product not found
+2025-08-15 22:57:05 search 200 83ms user2501 tx2047 Searched for MacBook Pro 16
+2025-08-15 22:57:50 payment 200 449ms user6243 tx9020 Payment processed
+2025-08-15 22:58:41 checkout 200 284ms user7519 tx6867 Product not found
+2025-08-15 22:58:41 payment 200 269ms user3035 tx6096 Payment completed
+2025-08-15 22:58:41 checkout 200 65ms user9605 tx7296 Purchased iPhone 13
+2025-08-15 22:58:41 checkout 200 204ms user6208 tx6635 Checkout failed due to DB error
+2025-08-15 22:58:41 search 200 385ms user1154 tx7171 Search result not found
+2025-08-15 22:58:41 payment 500 301ms user7941 tx5123 Payment gateway error
+2025-08-15 22:58:41 payment 500 250ms user2813 tx9431 Payment completed
+2025-08-15 22:58:41 checkout 403 319ms user6229 tx5161 Product not found
+2025-08-15 22:58:41 payment 404 477ms user6473 tx2500 Payment processed
+2025-08-15 22:58:41 search 200 487ms user1923 tx8550 Search result not found
+2025-08-15 22:58:41 payment 200 453ms user8358 tx2094 Payment service unavailable
+2025-08-15 22:59:28 checkout 200 213ms user1980 tx2439 Purchased AirPods Pro
+2025-08-15 23:00:20 search 200 465ms user9068 tx3618 Searched for MacBook Pro 16
+2025-08-15 23:00:47 checkout 200 88ms user7461 tx7202 Checkout failed due to DB error
+2025-08-15 23:01:23 checkout 200 242ms user9562 tx6706 Access denied to product
+2025-08-15 23:02:03 payment 500 95ms user6366 tx3840 Payment declined
+2025-08-15 23:03:01 search 200 388ms user8661 tx6118 Search result not found
+2025-08-15 23:03:49 payment 200 364ms user5028 tx4501 Payment processed
+2025-08-15 23:04:48 checkout 200 108ms user1690 tx9494 Purchased AirPods Pro
+2025-08-15 23:05:00 search 200 297ms user8792 tx5518 Search result not found
+2025-08-15 23:05:38 payment 200 260ms user3971 tx9788 Payment processed
+2025-08-15 23:06:03 search 200 291ms user1237 tx3098 Searched for MacBook Pro 16
+2025-08-15 23:06:20 search 200 118ms user9930 tx2983 Search result not found
+2025-08-15 23:06:32 payment 200 89ms user6208 tx9511 Payment gateway error
+2025-08-15 23:06:53 search 200 180ms user2723 tx1878 Searched for MacBook Pro 16
+2025-08-15 23:07:08 search 200 272ms user9473 tx7387 Searched for MacBook Pro 16
+2025-08-15 23:07:35 payment 200 342ms user2390 tx8125 Payment declined
+2025-08-15 23:07:57 checkout 200 98ms user8774 tx8859 Checkout failed due to DB error
+2025-08-15 23:08:09 checkout 200 206ms user2700 tx4639 Checkout failed due to DB error
+2025-08-15 23:08:27 search 200 229ms user9109 tx5135 Searched for Nintendo Switch OLED
+2025-08-15 23:08:51 checkout 200 104ms user2979 tx8560 Purchased iPhone 13
+2025-08-15 23:09:01 payment 500 188ms user1011 tx8839 Payment declined
+2025-08-15 23:09:39 search 200 95ms user7459 tx8557 Searched for Samsung Galaxy S23
+2025-08-15 23:09:39 checkout 200 369ms user9853 tx4076 Purchased AirPods Pro
+2025-08-15 23:09:39 checkout 200 230ms user1199 tx9379 Purchased iPhone 13
+2025-08-15 23:09:39 search 200 216ms user3549 tx7648 Searched for Samsung Galaxy S23
+2025-08-15 23:09:39 checkout 200 338ms user2140 tx9908 Purchased AirPods Pro
+2025-08-15 23:09:39 payment 404 377ms user5895 tx9245 Payment service unavailable
+2025-08-15 23:09:39 search 200 187ms user5659 tx3621 Searched for Nintendo Switch OLED
+2025-08-15 23:09:58 payment 200 142ms user7824 tx9260 Payment completed
+2025-08-15 23:10:25 payment 200 314ms user4628 tx2342 Payment service unavailable
+2025-08-15 23:11:06 checkout 403 382ms user8135 tx8782 Access denied to product
+2025-08-15 23:11:18 search 200 408ms user8799 tx8815 Searched for Samsung Galaxy S23
+2025-08-15 23:11:50 search 200 351ms user7777 tx8401 Searched for Samsung Galaxy S23
+2025-08-15 23:12:24 payment 200 117ms user6720 tx7811 Payment service unavailable
+2025-08-15 23:13:03 checkout 200 178ms user3789 tx9914 Checkout failed due to DB error
+2025-08-15 23:13:44 payment 200 251ms user7001 tx3793 Payment service unavailable
+2025-08-15 23:14:23 search 200 252ms user4763 tx9337 Searched for Nintendo Switch OLED
+2025-08-15 23:14:35 payment 200 269ms user4146 tx1227 Payment declined
+2025-08-15 23:15:03 search 200 252ms user2890 tx6390 Searched for MacBook Pro 16
+2025-08-15 23:15:42 payment 200 89ms user1409 tx2488 Payment gateway error
+2025-08-15 23:15:52 payment 500 446ms user9368 tx4373 Payment declined
+2025-08-15 23:15:52 search 200 430ms user9412 tx8231 Search result not found
+2025-08-15 23:15:52 checkout 404 286ms user2566 tx6808 Checkout failed due to DB error
+2025-08-15 23:15:52 payment 200 184ms user2921 tx3347 Payment service unavailable
+2025-08-15 23:15:52 payment 200 118ms user4851 tx6859 Payment declined
+2025-08-15 23:15:52 payment 200 432ms user1673 tx3127 Payment completed
+2025-08-15 23:15:52 checkout 200 249ms user7243 tx3830 Product not found
+2025-08-15 23:15:52 checkout 404 335ms user8379 tx8893 Checkout failed due to DB error
+2025-08-15 23:15:52 checkout 500 207ms user4473 tx7575 Access denied to product
+2025-08-15 23:15:52 search 200 499ms user2575 tx6690 Searched for MacBook Pro 16
+2025-08-15 23:16:20 search 200 438ms user3988 tx9863 Search result not found
+2025-08-15 23:16:33 payment 404 385ms user6655 tx5078 Payment completed
+2025-08-15 23:16:45 search 200 290ms user3689 tx1386 Searched for Nintendo Switch OLED
+2025-08-15 23:17:20 payment 200 321ms user6255 tx7278 Payment declined
+2025-08-15 23:17:41 payment 500 128ms user7654 tx7436 Payment completed
+2025-08-15 23:17:41 payment 200 263ms user9308 tx4835 Payment declined
+2025-08-15 23:17:41 payment 200 108ms user7154 tx2103 Payment service unavailable
+2025-08-15 23:17:41 payment 200 374ms user7505 tx7073 Payment gateway error
+2025-08-15 23:17:41 search 200 173ms user5820 tx1693 Searched for Samsung Galaxy S23
+2025-08-15 23:17:41 checkout 200 206ms user4552 tx5491 Purchased AirPods Pro
+2025-08-15 23:18:13 payment 200 389ms user1172 tx9742 Payment processed
+2025-08-15 23:18:34 payment 200 321ms user5584 tx4152 Payment completed
+2025-08-15 23:19:06 checkout 200 70ms user5656 tx1326 Purchased iPhone 13
+2025-08-15 23:19:33 payment 200 324ms user8375 tx6676 Payment completed
+2025-08-15 23:19:33 search 200 468ms user4846 tx1298 Searched for MacBook Pro 16
+2025-08-15 23:19:33 search 403 186ms user5524 tx3438 Searched for Nintendo Switch OLED
+2025-08-15 23:19:33 checkout 200 330ms user9784 tx2318 Access denied to product
+2025-08-15 23:19:33 payment 200 281ms user8124 tx3487 Payment gateway error
+2025-08-15 23:19:33 payment 500 208ms user4629 tx4982 Payment service unavailable
+2025-08-15 23:19:33 payment 200 333ms user2911 tx3263 Payment completed
+2025-08-15 23:19:33 checkout 200 349ms user2052 tx5663 Checkout failed due to DB error
+2025-08-15 23:19:33 payment 200 343ms user5130 tx4403 Payment service unavailable
+2025-08-15 23:19:33 search 404 393ms user7428 tx4888 Search result not found
+2025-08-15 23:19:33 checkout 404 162ms user7684 tx3443 Product not found
+2025-08-15 23:19:33 checkout 200 335ms user6511 tx3579 Checkout failed due to DB error
+2025-08-15 23:19:33 payment 404 473ms user6705 tx6649 Payment gateway error
+2025-08-15 23:19:33 checkout 500 498ms user2478 tx8998 Product not found
+2025-08-15 23:20:13 checkout 403 436ms user6494 tx2551 Purchased AirPods Pro
+2025-08-15 23:20:39 checkout 200 371ms user9399 tx3398 Purchased iPhone 13
+2025-08-15 23:21:31 payment 200 67ms user5001 tx9709 Payment service unavailable
+2025-08-15 23:22:25 search 500 297ms user7862 tx9405 Search result not found
+2025-08-15 23:23:00 checkout 200 210ms user7583 tx1387 Checkout failed due to DB error
+2025-08-15 23:23:24 checkout 200 318ms user6828 tx4526 Purchased iPhone 13
+2025-08-15 23:23:48 payment 200 470ms user1661 tx3090 Payment declined
+2025-08-15 23:24:47 search 500 211ms user7384 tx8617 Searched for Samsung Galaxy S23
+2025-08-15 23:25:18 payment 200 487ms user8980 tx7951 Payment processed
+2025-08-15 23:25:58 search 200 170ms user6689 tx6971 Search result not found
+2025-08-15 23:26:55 checkout 200 225ms user2303 tx9136 Purchased iPhone 13
+2025-08-15 23:26:55 checkout 403 473ms user4420 tx3198 Checkout failed due to DB error
+2025-08-15 23:26:55 search 200 336ms user6844 tx7573 Searched for Nintendo Switch OLED
+2025-08-15 23:26:55 payment 200 484ms user4426 tx1206 Payment gateway error
+2025-08-15 23:26:55 payment 200 258ms user7689 tx2221 Payment gateway error
+2025-08-15 23:26:55 checkout 200 225ms user7405 tx9615 Purchased AirPods Pro
+2025-08-15 23:26:55 search 500 275ms user2135 tx5227 Searched for Samsung Galaxy S23
+2025-08-15 23:26:55 payment 200 466ms user2168 tx9147 Payment service unavailable
+2025-08-15 23:26:55 payment 200 210ms user3852 tx8442 Payment processed
+2025-08-15 23:26:55 checkout 200 156ms user8859 tx1561 Access denied to product
+2025-08-15 23:26:55 search 500 476ms user4896 tx2009 Searched for MacBook Pro 16
+2025-08-15 23:26:55 payment 200 255ms user2611 tx7825 Payment gateway error
+2025-08-15 23:26:55 payment 200 374ms user9581 tx6802 Payment gateway error
+2025-08-15 23:26:55 payment 404 326ms user7126 tx5906 Payment declined
+2025-08-15 23:26:55 search 200 343ms user6322 tx4111 Search result not found
+2025-08-15 23:27:06 search 200 312ms user8465 tx8110 Searched for Samsung Galaxy S23
+2025-08-15 23:27:54 checkout 200 275ms user3224 tx3675 Purchased iPhone 13
+2025-08-15 23:28:09 checkout 200 300ms user7388 tx7122 Purchased iPhone 13
+2025-08-15 23:28:30 search 200 93ms user1993 tx8267 Search result not found
+2025-08-15 23:29:06 search 200 347ms user7234 tx3220 Searched for MacBook Pro 16
+2025-08-15 23:29:20 checkout 200 64ms user2774 tx7899 Checkout failed due to DB error
+2025-08-15 23:29:34 payment 200 469ms user7311 tx8019 Payment processed
+2025-08-15 23:30:17 checkout 200 391ms user8904 tx4422 Purchased iPhone 13
+2025-08-15 23:31:17 checkout 200 453ms user5440 tx1146 Product not found
+2025-08-15 23:32:04 checkout 200 345ms user1774 tx8752 Product not found
+2025-08-15 23:32:17 search 200 270ms user1064 tx8592 Searched for Nintendo Switch OLED
+2025-08-15 23:32:59 payment 200 311ms user9841 tx9314 Payment declined
+2025-08-15 23:33:18 payment 200 148ms user9077 tx4692 Payment completed
+2025-08-15 23:33:59 payment 200 347ms user1461 tx2567 Payment service unavailable
+2025-08-15 23:34:38 search 200 224ms user3152 tx2163 Search result not found
+2025-08-15 23:35:17 checkout 200 333ms user3412 tx5480 Purchased iPhone 13
+2025-08-15 23:35:56 checkout 500 201ms user9456 tx8788 Checkout failed due to DB error
+2025-08-15 23:35:56 payment 500 346ms user6493 tx1992 Payment completed
+2025-08-15 23:35:56 payment 200 476ms user3308 tx4579 Payment declined
+2025-08-15 23:35:56 checkout 200 304ms user2713 tx9070 Purchased AirPods Pro
+2025-08-15 23:35:56 search 403 117ms user8365 tx7502 Searched for MacBook Pro 16
+2025-08-15 23:35:56 search 403 263ms user3859 tx7466 Search result not found
+2025-08-15 23:35:56 payment 200 378ms user7756 tx3032 Payment declined
+2025-08-15 23:35:56 payment 404 145ms user6209 tx8501 Payment declined
+2025-08-15 23:35:56 checkout 404 412ms user4074 tx6319 Purchased iPhone 13
+2025-08-15 23:35:56 search 200 124ms user7541 tx9899 Searched for Nintendo Switch OLED
+2025-08-15 23:35:56 search 200 73ms user3641 tx2679 Search result not found
+2025-08-15 23:35:56 search 200 283ms user4799 tx1301 Search result not found
+2025-08-15 23:36:50 checkout 200 499ms user9660 tx7982 Purchased AirPods Pro
+2025-08-15 23:37:43 search 200 365ms user9173 tx9349 Searched for Nintendo Switch OLED
+2025-08-15 23:38:18 payment 404 373ms user1094 tx6815 Payment gateway error
+2025-08-15 23:38:57 checkout 200 421ms user7194 tx1443 Checkout failed due to DB error
+2025-08-15 23:39:40 search 200 157ms user9039 tx3783 Search result not found
+2025-08-15 23:40:09 search 404 139ms user9575 tx4781 Searched for MacBook Pro 16
+2025-08-15 23:40:41 payment 200 386ms user6058 tx3622 Payment declined
+2025-08-15 23:41:03 payment 200 299ms user9473 tx4035 Payment completed
+2025-08-15 23:41:52 payment 200 313ms user5870 tx3243 Payment processed
+2025-08-15 23:42:23 payment 200 330ms user6286 tx3371 Payment declined
+2025-08-15 23:42:56 search 200 306ms user8459 tx9125 Search result not found
+2025-08-15 23:43:53 payment 200 403ms user5970 tx5113 Payment declined
+2025-08-15 23:44:50 search 200 448ms user2877 tx2063 Searched for MacBook Pro 16
+2025-08-15 23:45:35 search 200 210ms user4078 tx3908 Searched for Samsung Galaxy S23
+2025-08-15 23:46:18 payment 200 109ms user2648 tx4671 Payment gateway error
+2025-08-15 23:47:13 search 200 175ms user3322 tx4179 Searched for Nintendo Switch OLED
+2025-08-15 23:47:51 payment 200 462ms user2225 tx3283 Payment gateway error
+2025-08-15 23:48:47 checkout 200 192ms user1424 tx7597 Purchased AirPods Pro
+2025-08-15 23:49:06 checkout 500 291ms user7503 tx8477 Product not found
+2025-08-15 23:49:06 search 500 69ms user5789 tx3592 Searched for MacBook Pro 16
+2025-08-15 23:49:06 payment 200 253ms user9855 tx6910 Payment declined
+2025-08-15 23:49:06 checkout 200 325ms user2545 tx8460 Purchased AirPods Pro
+2025-08-15 23:49:06 payment 200 411ms user3766 tx3008 Payment declined
+2025-08-15 23:49:06 checkout 200 161ms user6662 tx1971 Purchased AirPods Pro
+2025-08-15 23:49:06 payment 200 71ms user9577 tx4317 Payment service unavailable
+2025-08-15 23:49:06 payment 200 121ms user4988 tx7428 Payment declined
+2025-08-15 23:49:06 payment 200 419ms user1576 tx8323 Payment service unavailable
+2025-08-15 23:49:06 search 500 171ms user3611 tx3313 Searched for MacBook Pro 16
+2025-08-15 23:49:06 search 200 308ms user3003 tx1960 Searched for Samsung Galaxy S23
+2025-08-15 23:49:36 checkout 200 397ms user9440 tx8614 Product not found
+2025-08-15 23:50:23 payment 200 475ms user5891 tx4719 Payment gateway error
+2025-08-15 23:51:11 search 200 407ms user4623 tx4957 Searched for MacBook Pro 16
+2025-08-15 23:52:08 search 404 336ms user7050 tx8271 Search result not found
+2025-08-15 23:52:44 payment 200 479ms user2863 tx7088 Payment gateway error
+2025-08-15 23:53:04 checkout 403 370ms user9893 tx9487 Access denied to product
+2025-08-15 23:53:19 search 200 189ms user4120 tx7876 Searched for Samsung Galaxy S23
+2025-08-15 23:53:58 search 200 410ms user9622 tx8813 Search result not found
+2025-08-15 23:54:53 search 200 292ms user3035 tx1974 Searched for Samsung Galaxy S23
