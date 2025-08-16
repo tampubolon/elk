@@ -1,20 +1,13 @@
 # Parser Tool
 I create a golang CLI tool and a python script for parsing the log.
-
 ## Golang CLI
 This CLI tool is designed to help Site Reliability Engineers (SREs) parse raw log files, transform them into structured JSON suitable for ingestion into Elasticsearch, and compute useful metrics such as error rates, average response times, and total transactions.
-
 ### Features
 Parse logs: Converts raw log files into Elasticsearch Bulk API JSON format.
-
 Compute metrics: Extracts key metrics (error rate, average response time, transaction count) from logs and outputs them in JSON.
-
-
 ### Prerequisites
 Go installed (version 1.20+ recommended)
-
 ### Setup
-
 Clone this repository and install dependencies:
 ```
 git clone <your-repo-url>
@@ -22,14 +15,11 @@ cd <your-repo-folder>
 go mod init logcli
 go mod tidy
 ```
-
 ### Build
 ```
 go build -o logcli main.go
 ```
 This will generate a binary named logcli.
-
-
 ### Usage
 #### Parse Log 
 Converts raw logs into Elasticsearch Bulk API format.
