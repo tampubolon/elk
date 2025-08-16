@@ -21,6 +21,13 @@ type LogEntry struct {
     Description   string `json:"description"`
 }
 
+type Metrics struct {
+    TotalTransactions int     `json:"total_transactions"`
+    ErrorCount        int     `json:"error_count"`
+    ErrorRate         float64 `json:"error_rate"`
+    AvgResponseTime   float64 `json:"average_response_time"`
+}
+
 func parseLogFile(inputFile, outputFile string) error {
     file, err := os.Open(inputFile)
     if err != nil {
@@ -75,6 +82,54 @@ func parseLogFile(inputFile, outputFile string) error {
     return scanner.Err()
 }
 
+func computeMetrics(inputFile, outputFile string) error {
+    file, err := os.Open(inputFile)
+    if err != nil {
+        return err
+    }
+    defer file.Close()
+
+    scanner := bufio.NewScanner(file)
+    totalTransactions := 0
+    errorCount := 0
+    totalResponseTime := 0
+
+    for scanner.Scan() {
+        line := scanner.Text()
+        fields := strings.Fields(line)
+        if len(fields) < 7 {
+            continue
+        }
+
+        status, _ := strconv.Atoi(fields[3])
+        responseStr := strings.TrimSuffix(fields[4], "ms")
+        responseTime, _ := strconv.Atoi(responseStr)
+
+        totalTransactions++
+        totalResponseTime += responseTime
+        if status >= 400 {
+            errorCount++
+        }
+    }
+
+    metrics := Metrics{
+        TotalTransactions: totalTransactions,
+        ErrorCount:        errorCount,
+        ErrorRate:         float64(errorCount) / float64(totalTransactions),
+        AvgResponseTime:   float64(totalResponseTime) / float64(totalTransactions),
+    }
+
+    out, err := os.Create(outputFile)
+    if err != nil {
+        return err
+    }
+    defer out.Close()
+
+    enc := json.NewEncoder(out)
+    enc.SetIndent("", "  ")
+    return enc.Encode(metrics)
+}
+
 func main() {
     var inputFile string
     var outputFile string
@@ -88,12 +143,22 @@ func main() {
             return parseLogFile(inputFile, outputFile)
         },
     }
-
     parseCmd.Flags().StringVar(&inputFile, "input", "", "Input log file")
     parseCmd.Flags().StringVar(&outputFile, "output-file", "parsed.json", "Output JSON file")
     parseCmd.MarkFlagRequired("input")
 
-    rootCmd.AddCommand(parseCmd)
+    var metricsCmd = &cobra.Command{
+        Use:   "compute-metrics",
+        Short: "Compute metrics from log file (error rate, avg response time, etc.)",
+        RunE: func(cmd *cobra.Command, args []string) error {
+            return computeMetrics(inputFile, outputFile)
+        },
+    }
+    metricsCmd.Flags().StringVar(&inputFile, "input", "", "Input log file")
+    metricsCmd.Flags().StringVar(&outputFile, "output-file", "metrics.json", "Output metrics JSON file")
+    metricsCmd.MarkFlagRequired("input")
+
+    rootCmd.AddCommand(parseCmd, metricsCmd)
 
     if err := rootCmd.Execute(); err != nil {
         fmt.Println("Error:", err)
