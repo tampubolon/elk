@@ -15,9 +15,11 @@ This ELK infrastructure runs on top of GCP VM.
 The ELK stack run using Docker container managed by Docker Compose.
 Step to setup this ELK infrastructure:
 - Provision GCP VM from GCP console
+    ![alt text](assets/image2.png)
+    ![alt text](assets/image3.png)
 - Setup correct firewall for the VM to make Kibana accessible from internet.
 - Access the VM using SSH.
-- Clone this repo into the VM
+- Clone this repo into the VM using git CLI.
 - Add `.env` into the root folder of this project, the file should look like below:
     ```
     # Password for the 'kibana_system' user (at least 6 characters)
@@ -56,9 +58,8 @@ Step to setup this ELK infrastructure:
 
 
 ### Dashboard
-ELK Dashboard can be access from (this link)[http://34.86.95.104:5601/app/dashboards#/view/5c15b215-6b75-4c57-a0b6-79d530b19667?_g=(filters:!(),refreshInterval:(pause:!f,value:10000),time:(from:now-15m,to:now))]   
+ELK Dashboard can be access from [this link](http://34.86.95.104:5601/app/dashboards#/view/5c15b215-6b75-4c57-a0b6-79d530b19667?_g=(filters:!(),refreshInterval:(pause:!f,value:10000),time:(from:now-15m,to:now)))   
 ![alt text](assets/image.png) 
 
 #### Reference
 - https://www.elastic.co/blog/getting-started-with-the-elastic-stack-and-docker-compose
-
