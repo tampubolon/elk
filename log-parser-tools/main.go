@@ -134,7 +134,7 @@ func main() {
     var inputFile string
     var outputFile string
 
-    var rootCmd = &cobra.Command{Use: "logcli"}
+    var rootCmd = &cobra.Command{Use: "sawitpro"}
 
     var parseCmd = &cobra.Command{
         Use:   "parse-log",
