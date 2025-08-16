@@ -206,7 +206,12 @@ Step to setup this ELK infrastructure:
 
 ### Dashboard
 ELK Dashboard can be access from [this link](http://34.86.95.104:5601/app/dashboards#/view/5c15b215-6b75-4c57-a0b6-79d530b19667?_g=(filters:!(),refreshInterval:(pause:!f,value:10000),time:(from:now-15m,to:now)))   
-![alt text](assets/image.png) 
+![alt text](assets/image.png)
+There are four panels on the Dashboard:
+- Error rate per 30-minutes interval: Percentage of error for every 30 minutes interval.
+- Error count for http code 4xx and 5xx.
+- HTTP status code distribution.
+- Average response time per microservices. 
 
 #### Reference
 - https://www.elastic.co/blog/getting-started-with-the-elastic-stack-and-docker-compose
