@@ -22,7 +22,8 @@ go build -o logcli main.go
 This will generate a binary named logcli.
 ### Usage
 #### Parse Log 
-Converts raw logs into Elasticsearch Bulk API format.
+Converts raw logs into Elasticsearch Bulk API format:
+
 ```./logcli parse-log --input sample.log --output-file parsed.json```
 - `--input`: Path to the raw log file.
 
@@ -34,7 +35,8 @@ Example output in parsed.json:
 { "timestamp": "2025-08-15 13:45:00", "microservice": "checkout", "status": 200, "response_time": 120, "user_id": "user1234", "transaction_id": "tx5678", "description": "Purchased iPhone 13" }
 ```
 #### Compute Metrics
-Computes useful metrics from the log file and outputs them in JSON.
+Computes useful metrics from the log file and outputs them in JSON:
+
 ```./logcli compute-metrics --input sample.log --output-file metrics.json```
 
 - `--input`: Path to the raw log file.
