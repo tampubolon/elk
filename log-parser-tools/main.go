@@ -24,6 +24,9 @@ type LogEntry struct {
 type Metrics struct {
 	TotalTransactions int     `json:"total_log_entries"`
 	ErrorCount        int     `json:"error_count"`
+	Status5xxCount    int     `json:"5xx_count"`
+	Status4xxCount    int     `json:"4xx_count"`
+	Status200Count    int     `json:"200_count"`
 	ErrorRate         float64 `json:"error_rate"`
 	AvgResponseTime   float64 `json:"average_response_time"`
 }
@@ -93,6 +96,9 @@ func computeMetrics(inputFile, outputFile string) error {
 	totalTransactions := 0
 	errorCount := 0
 	totalResponseTime := 0
+	status5xxCount := 0
+	status4xxCount := 0
+	status200Count := 0
 
 	for scanner.Scan() {
 		line := scanner.Text()
@@ -107,14 +113,24 @@ func computeMetrics(inputFile, outputFile string) error {
 
 		totalTransactions++
 		totalResponseTime += responseTime
-		if status >= 400 {
+
+		if status >= 400 && status < 500 {
 			errorCount++
+			status4xxCount++
+		} else if status >= 500 {
+			errorCount++
+			status5xxCount++
+		} else if status == 200 {
+			status200Count++
 		}
 	}
 
 	metrics := Metrics{
 		TotalTransactions: totalTransactions,
 		ErrorCount:        errorCount,
+		Status5xxCount:    status5xxCount,
+		Status4xxCount:    status4xxCount,
+		Status200Count:    status200Count,
 		ErrorRate:         float64(errorCount) / float64(totalTransactions),
 		AvgResponseTime:   float64(totalResponseTime) / float64(totalTransactions),
 	}
