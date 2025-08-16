@@ -1,6 +1,5 @@
 {
   "$schema": "https://vega.github.io/schema/vega/v5.json",
-  "title": "HTTP Status Code Distribution",
   "autosize": "none",
   "width": 400,
   "height": 400,
@@ -66,20 +65,49 @@
 
   "marks": [
     {
+      "type": "text",
+      "encode": {
+        "enter": {
+          "x": { "signal": "width / 2" },
+          "y": { "value": 20 },
+          "align": { "value": "center" },
+          "fontSize": { "value": 18 },
+          "fontWeight": { "value": "bold" },
+          "text": { "value": "HTTP Status Code Distribution" }
+        }
+      }
+    },
+    {
       "type": "arc",
       "from": { "data": "grouped_status" },
       "encode": {
         "enter": {
           "fill": { "scale": "color", "field": "category" },
           "x": { "signal": "width / 2" },
-          "y": { "signal": "height / 2" },
+          "y": { "signal": "height / 2 + 10" },
           "startAngle": { "field": "startAngle" },
           "endAngle": { "field": "endAngle" },
           "innerRadius": { "value": 0 },
-          "outerRadius": { "signal": "min(width, height) / 2" },
+          "outerRadius": { "signal": "min(width, height) / 2 - 20" },
           "tooltip": {
             "signal": "datum.category + ': ' + format(datum.count, ',') + ' (' + format(datum.count / datum.total * 100, '.1f') + '%)'"
           }
+        }
+      }
+    },
+    {
+      "type": "text",
+      "from": { "data": "grouped_status" },
+      "encode": {
+        "enter": {
+          "x": { "signal": "width / 2" },
+          "y": { "signal": "height / 2 + 10" },
+          "align": { "value": "center" },
+          "baseline": { "value": "middle" },
+          "fontSize": { "value": 16 },
+          "fontWeight": { "value": "bold" },
+          "fill": { "value": "#333" },
+          "text": { "signal": "'Total Log Entries: ' + format(datum.total, ',')" }
         }
       }
     }
