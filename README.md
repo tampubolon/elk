@@ -44,9 +44,10 @@ This will generate a binary named sawitpro.
 #### Usage
 ##### Parse Log 
 Converts raw logs into Elasticsearch Bulk API format.
-```./sawitpro parse-log --input sample.log --output-file parsed.json```
+```
+./sawitpro parse-log --input sample.log --output-file parsed.json
+```
 - `--input`: Path to the raw log file.
-
 - `--output-file`: Path to save the structured JSON (default: parsed.json).
 
 Example output in parsed.json:
@@ -56,10 +57,11 @@ Example output in parsed.json:
 ```
 ##### Compute Metrics
 Computes useful metrics from the log file and outputs them in JSON.
-```./sawitpro compute-metrics --input sample.log --output-file metrics.json```
+```
+./sawitpro compute-metrics --input sample.log --output-file metrics.json
+```
 
 - `--input`: Path to the raw log file.
-
 - `--output-file`: Path to save the metrics JSON (default: metrics.json).
 
 Example output in metrics.json:
@@ -130,8 +132,8 @@ The generated JSON file will include Elasticsearch bulk indexing commands:
 { "timestamp": "2025-08-16T12:34:56Z", "microservice": "payment", "status": 200, "response_time": 150, "user_id": "user123", "transaction_id": "txn789", "description": "Payment successful" }
 ```
 
-
 ---
+</br>
 
 ## B. ELK Stack for Logging Infrastructure
 
