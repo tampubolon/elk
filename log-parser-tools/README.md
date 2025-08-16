@@ -7,9 +7,8 @@ Why chose Golang for the CLI tool?
 Go is a powerful and simple language, widely used for building CLI tools in the DevOps ecosystem. Popular projects like Docker, Kubernetes, Prometheus, and Terraform rely heavily on Go for their CLI interfaces. While Go has a native flag package for handling command-line arguments, using the Cobra package makes it even easier to create structured, user-friendly CLI applications.
 
 ### Features
-Parse logs: Converts raw log files into Elasticsearch Bulk API JSON format.
-
-Compute metrics: Extracts key metrics (error rate, average response time, transaction count) from logs and outputs them in JSON.
+- Parse logs: Converts raw log files into Elasticsearch Bulk API JSON format.
+- Compute metrics: Extracts key metrics (error rate, average response time, transaction count) from logs and outputs them in JSON.
 
 
 ### Prerequisites
