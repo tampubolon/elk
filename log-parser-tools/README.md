@@ -1,7 +1,7 @@
 # Parser Tool
 I create a Golang CLI tool and a Python script for parsing the log. 
 
-## Golang CLI
+## 1. Golang CLI
 This CLI tool is designed to help Site Reliability Engineers (SREs) parse raw log files, transform them into structured JSON suitable for ingestion into Elasticsearch, and compute useful metrics such as error rates, average response times, and total transactions.
 Why chose Golang for the CLI tool?
 Go is a powerful and simple language, widely used for building CLI tools in the DevOps ecosystem. Popular projects like Docker, Kubernetes, Prometheus, and Terraform rely heavily on Go for their CLI interfaces. While Go has a native flag package for handling command-line arguments, using the Cobra package makes it even easier to create structured, user-friendly CLI applications.
@@ -64,5 +64,5 @@ Example output in metrics.json:
 
 
 
-## Python Script
+## 2. Python Script
 `parser.py`
