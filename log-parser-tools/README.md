@@ -24,7 +24,9 @@ This will generate a binary named logcli.
 #### Parse Log 
 Converts raw logs into Elasticsearch Bulk API format:
 
-```./logcli parse-log --input sample.log --output-file parsed.json```
+```
+./logcli parse-log --input sample.log --output-file parsed.json
+```
 - `--input`: Path to the raw log file.
 
 - `--output-file`: Path to save the structured JSON (default: parsed.json).
@@ -37,7 +39,9 @@ Example output in parsed.json:
 #### Compute Metrics
 Computes useful metrics from the log file and outputs them in JSON:
 
-```./logcli compute-metrics --input sample.log --output-file metrics.json```
+```
+./logcli compute-metrics --input sample.log --output-file metrics.json
+```
 
 - `--input`: Path to the raw log file.
 
